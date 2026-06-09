@@ -2971,7 +2971,7 @@ html.js .home-cred-split__visual .home-cred-thumb__trigger img {
 
 .about-page .about-hero__copy-panel {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   overflow-wrap: break-word;
   padding: clamp(24px, 3vw, 32px);
   border-radius: 16px;
@@ -3028,10 +3028,22 @@ html.js .home-cred-split__visual .home-cred-thumb__trigger img {
 
 /* DE about hero: long headline fits panel; descenders (g, n, y) stay inside */
 html[lang="de"] .about-page .about-hero__copy-intro h1 {
-  font-size: clamp(2rem, 4.2vw, 2.65rem);
-  line-height: 1.16;
-  letter-spacing: -0.022em;
-  padding-bottom: 0.06em;
+  font-size: clamp(1.68rem, 3.1vw, 2.1rem);
+  line-height: 1.48;
+  letter-spacing: -0.016em;
+  padding-bottom: 0.2em;
+  overflow: visible;
+  hyphens: none;
+}
+
+html[lang="de"] .about-page .about-hero__copy-intro h1 .about-hero__headline-line {
+  display: block;
+  line-height: 1.48;
+  padding-bottom: 0.08em;
+}
+
+html[lang="de"] .about-page .about-hero__copy-intro h1 .about-hero__headline-line + .about-hero__headline-line {
+  margin-top: 0.14em;
 }
 
 .about-page .about-hero__copy-intro .lead {
@@ -3706,8 +3718,10 @@ html[lang="de"] .about-page .about-hero__copy-intro h1 {
   }
 
   html[lang="de"] .about-page .about-hero__copy-intro h1 {
-    font-size: clamp(1.55rem, 4.6vw, 1.95rem);
-    line-height: 1.18;
+    font-size: clamp(1.35rem, 3.6vw, 1.68rem);
+    line-height: 1.58;
+    padding-bottom: 0.2em;
+    hyphens: none;
   }
 
   .about-page .about-hero__copy-intro .lead {
@@ -3987,8 +4001,10 @@ html[lang="de"] .about-page .about-hero__copy-intro h1 {
   }
 
   html[lang="de"] .about-page .about-hero__copy-intro h1 {
-    font-size: clamp(1.35rem, 5.8vw, 1.65rem);
-    line-height: 1.2;
+    font-size: clamp(1.22rem, 4.8vw, 1.45rem);
+    line-height: 1.58;
+    padding-bottom: 0.2em;
+    hyphens: none;
   }
 
   .about-page .about-hero__copy-panel {
@@ -6375,13 +6391,15 @@ body {
     font-size: clamp(1.75rem, 7.2vw, 2rem);
   }
 
-  .about-page .about-hero__copy h1 {
+  .about-page .about-hero__copy-intro h1 {
     font-size: clamp(1.75rem, 6.8vw, 2rem);
   }
 
-  html[lang="de"] .about-page .about-hero__copy h1 {
-    font-size: clamp(1.55rem, 6.2vw, 1.78rem);
-    line-height: 1.2;
+  html[lang="de"] .about-page .about-hero__copy-intro h1 {
+    font-size: clamp(1.22rem, 4.8vw, 1.45rem);
+    line-height: 1.58;
+    padding-bottom: 0.2em;
+    hyphens: none;
   }
 }
 
