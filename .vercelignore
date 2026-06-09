@@ -13,3 +13,5 @@ tools/*
 !tools/generate-sitemap.mjs
 !tools/sync-vercel-clean-urls.mjs
 !tools/vercel-clean-url-routes.mjs
+!tools/sync-de-public-paths.mjs
+!tools/locale-url-map.mjs
