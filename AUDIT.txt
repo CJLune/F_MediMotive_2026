@@ -1,0 +1,35 @@
+*** SUPERSEDED by source-truth/ — do not edit AUDIT.txt for new audits. See source-truth/README.md ***
+
+Design audit — MediMotive static site (2026-05-18)
+
+PASS (site-wide)
+- No fake logo (text wordmark only)
+- No header email CTA
+- No contact/request form
+- No visible placeholder boxes (empty visual sections hidden via :not(:has(img[src])) and .is-empty)
+- Approved color palette unchanged
+- Compact nav: Expertise, Case Studies, About, Contact (no Home, no Gallery in header)
+- LinkedIn in footer and contact page: https://www.linkedin.com/in/bjoern-seiler-30481b165/
+- gallery.html linked from About anchor area, work journey section, and footer Proof only
+
+PASS (about.html structure)
+1. Hero — About MediMotive, anchor links (credentials, work journey, full visual profile)
+2. Human introduction — portrait live, quote
+3. What MediMotive stands for — three cards
+4. Career arc — four timeline items
+5. Work journey (#work-journey) — four story cards with images when files exist
+6. Credentials (#credentials) — “At a glance” list (20 items) + all 20 certificate PDFs as JPG cards in grouped layout (document frames, lightbox)
+7. Proof bridge — case studies CTA
+
+PASS (gallery.html credentials)
+- Grouped: Process & audit, Regulatory & product safety, Management systems (2+2+3 grid)
+- Unified cert-card markup with lightbox (shared app.js)
+
+PASS (gallery.html)
+- Credentials & Work Journey page: certificates, work journey, project note → case studies
+- No confidential customer logos/drawings in gallery
+
+IMAGE PATHS
+- Certificates: assets/images/certificates/bjoern-seiler-*.jpg
+- Work journey: assets/images/work-journey/work-*.jpg, bjoern-seiler-*.jpg
+- Portrait: assets/images/bjoern-seiler-portrait.jpg

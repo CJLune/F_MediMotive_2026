@@ -1,0 +1,476 @@
+{
+  "buildCommand": "NODE_ENV=production npm run build:css && npm run sitemap",
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.medimotive.de"
+        }
+      ],
+      "destination": "https://medimotive.de/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/de/index.html",
+      "destination": "/de/",
+      "permanent": true
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/medimotive-favicon.ico",
+      "permanent": false
+    },
+    {
+      "source": "/apple-touch-icon-precomposed.png",
+      "destination": "/apple-touch-icon.png",
+      "permanent": false
+    },
+    {
+      "source": "/organic-quality-method.html",
+      "destination": "/our-approach",
+      "permanent": true
+    },
+    {
+      "source": "/organic-quality-method",
+      "destination": "/our-approach",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies.html",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/case-coated-aluminum-parts.html",
+      "destination": "/case-coated-aluminum-parts",
+      "permanent": true
+    },
+    {
+      "source": "/case-production-ramp-up.html",
+      "destination": "/case-production-ramp-up",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/certificates.html",
+      "destination": "/certificates",
+      "permanent": true
+    },
+    {
+      "source": "/work-journey.html",
+      "destination": "/work-journey",
+      "permanent": true
+    },
+    {
+      "source": "/our-approach.html",
+      "destination": "/our-approach",
+      "permanent": true
+    },
+    {
+      "source": "/gallery.html",
+      "destination": "/gallery",
+      "permanent": true
+    },
+    {
+      "source": "/regions.html",
+      "destination": "/regions",
+      "permanent": true
+    },
+    {
+      "source": "/imprint.html",
+      "destination": "/imprint",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/rapid-response-troubleshooting.html",
+      "destination": "/services/rapid-response-troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/supplier-quality-complaint-management.html",
+      "destination": "/services/supplier-quality-complaint-management",
+      "permanent": true
+    },
+    {
+      "source": "/ramp-up-process-stability.html",
+      "destination": "/services/ramp-up-process-stability",
+      "permanent": true
+    },
+    {
+      "source": "/early-phase-risk-design-for-quality.html",
+      "destination": "/services/early-phase-risk-control-design-for-quality",
+      "permanent": true
+    },
+    {
+      "source": "/qms-audit-regulatory-support.html",
+      "destination": "/services/qms-audit-regulatory-support",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-gap-transition-security.html",
+      "destination": "/services/knowledge-gap-transition-security",
+      "permanent": true
+    },
+    {
+      "source": "/rapid-response-troubleshooting",
+      "destination": "/services/rapid-response-troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/supplier-quality-complaint-management",
+      "destination": "/services/supplier-quality-complaint-management",
+      "permanent": true
+    },
+    {
+      "source": "/ramp-up-process-stability",
+      "destination": "/services/ramp-up-process-stability",
+      "permanent": true
+    },
+    {
+      "source": "/early-phase-risk-design-for-quality",
+      "destination": "/services/early-phase-risk-control-design-for-quality",
+      "permanent": true
+    },
+    {
+      "source": "/services/early-phase-risk-design-for-quality",
+      "destination": "/services/early-phase-risk-control-design-for-quality",
+      "permanent": true
+    },
+    {
+      "source": "/qms-audit-regulatory-support",
+      "destination": "/services/qms-audit-regulatory-support",
+      "permanent": true
+    },
+    {
+      "source": "/knowledge-gap-transition-security",
+      "destination": "/services/knowledge-gap-transition-security",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/google-sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/medimotive-favicon.ico",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/favicon.ico",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/apple-touch-icon.png",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/((?!sitemap\\.xml|robots\\.txt|google-sitemap\\.xml).*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/assets/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)\\.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)\\.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/services",
+      "destination": "/services.html"
+    },
+    {
+      "source": "/case-studies",
+      "destination": "/case-studies.html"
+    },
+    {
+      "source": "/case-coated-aluminum-parts",
+      "destination": "/case-coated-aluminum-parts.html"
+    },
+    {
+      "source": "/case-production-ramp-up",
+      "destination": "/case-production-ramp-up.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/certificates",
+      "destination": "/certificates.html"
+    },
+    {
+      "source": "/work-journey",
+      "destination": "/work-journey.html"
+    },
+    {
+      "source": "/our-approach",
+      "destination": "/our-approach.html"
+    },
+    {
+      "source": "/gallery",
+      "destination": "/gallery.html"
+    },
+    {
+      "source": "/regions",
+      "destination": "/regions.html"
+    },
+    {
+      "source": "/imprint",
+      "destination": "/imprint.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/services/rapid-response-troubleshooting",
+      "destination": "/rapid-response-troubleshooting.html"
+    },
+    {
+      "source": "/services/supplier-quality-complaint-management",
+      "destination": "/supplier-quality-complaint-management.html"
+    },
+    {
+      "source": "/services/ramp-up-process-stability",
+      "destination": "/ramp-up-process-stability.html"
+    },
+    {
+      "source": "/services/early-phase-risk-control-design-for-quality",
+      "destination": "/early-phase-risk-control-design-for-quality.html"
+    },
+    {
+      "source": "/services/qms-audit-regulatory-support",
+      "destination": "/qms-audit-regulatory-support.html"
+    },
+    {
+      "source": "/services/knowledge-gap-transition-security",
+      "destination": "/knowledge-gap-transition-security.html"
+    },
+    {
+      "source": "/services/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/de",
+      "destination": "/de/index.html"
+    },
+    {
+      "source": "/de/services",
+      "destination": "/de/services.html"
+    },
+    {
+      "source": "/de/case-studies",
+      "destination": "/de/case-studies.html"
+    },
+    {
+      "source": "/de/case-coated-aluminum-parts",
+      "destination": "/de/case-coated-aluminum-parts.html"
+    },
+    {
+      "source": "/de/case-production-ramp-up",
+      "destination": "/de/case-production-ramp-up.html"
+    },
+    {
+      "source": "/de/about",
+      "destination": "/de/about.html"
+    },
+    {
+      "source": "/de/contact",
+      "destination": "/de/contact.html"
+    },
+    {
+      "source": "/de/certificates",
+      "destination": "/de/certificates.html"
+    },
+    {
+      "source": "/de/work-journey",
+      "destination": "/de/work-journey.html"
+    },
+    {
+      "source": "/de/our-approach",
+      "destination": "/de/our-approach.html"
+    },
+    {
+      "source": "/de/gallery",
+      "destination": "/de/gallery.html"
+    },
+    {
+      "source": "/de/regions",
+      "destination": "/de/regions.html"
+    },
+    {
+      "source": "/de/imprint",
+      "destination": "/de/imprint.html"
+    },
+    {
+      "source": "/de/privacy",
+      "destination": "/de/privacy.html"
+    },
+    {
+      "source": "/de/services/rapid-response-troubleshooting",
+      "destination": "/de/services/rapid-response-troubleshooting.html"
+    },
+    {
+      "source": "/de/services/supplier-quality-complaint-management",
+      "destination": "/de/services/supplier-quality-complaint-management.html"
+    },
+    {
+      "source": "/de/services/ramp-up-process-stability",
+      "destination": "/de/services/ramp-up-process-stability.html"
+    },
+    {
+      "source": "/de/services/early-phase-risk-control-design-for-quality",
+      "destination": "/de/services/early-phase-risk-control-design-for-quality.html"
+    },
+    {
+      "source": "/de/services/qms-audit-regulatory-support",
+      "destination": "/de/services/qms-audit-regulatory-support.html"
+    },
+    {
+      "source": "/de/services/knowledge-gap-transition-security",
+      "destination": "/de/services/knowledge-gap-transition-security.html"
+    },
+    {
+      "source": "/de/services/assets/:path*",
+      "destination": "/assets/:path*"
+    }
+  ]
+}

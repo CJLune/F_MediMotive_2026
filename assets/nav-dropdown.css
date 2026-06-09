@@ -1,0 +1,346 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Nav dropdown — Expertise flyout
+   Desktop: CSS hover + focus-within
+   Mobile: collapsible sub-links (accordion)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.site-header {
+  overflow: visible;
+}
+
+.site-header .container.nav {
+  overflow: visible;
+}
+
+.site-header .nav-links {
+  overflow: visible;
+}
+
+/* ─── DESKTOP DROPDOWN WRAPPER ─── */
+
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-dropdown:hover,
+.nav-dropdown:focus-within {
+  z-index: 210;
+}
+
+/* Invisible bridge so hover is not lost between trigger and panel */
+.nav-dropdown::after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  right: -12px;
+  top: 100%;
+  height: 14px;
+  z-index: 199;
+}
+
+/* ─── CHEVRON on Expertise link ─── */
+
+.nav-dropdown > .nav-dropdown__trigger::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 3.5px solid transparent;
+  border-right: 3.5px solid transparent;
+  border-top: 4px solid currentColor;
+  margin-left: 5px;
+  vertical-align: middle;
+  opacity: 0.6;
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown:hover > .nav-dropdown__trigger::after,
+.nav-dropdown:focus-within > .nav-dropdown__trigger::after {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* ─── DROPDOWN PANEL ─── */
+
+.nav-dropdown__panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  min-width: 280px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(28, 46, 74, 0.10);
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-4px);
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0.18s ease;
+  pointer-events: none;
+}
+
+.nav-dropdown:hover .nav-dropdown__panel,
+.nav-dropdown:focus-within .nav-dropdown__panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* ─── DROPDOWN ITEMS ─── */
+
+.nav-dropdown__panel a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 18px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--brand-dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.nav-dropdown__panel a:last-child {
+  border-bottom: none;
+}
+
+.nav-dropdown__panel a:hover {
+  background: var(--brand-light);
+  color: var(--brand-primary);
+}
+
+.nav-dropdown__panel a:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: -2px;
+}
+
+.nav-dropdown__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--line);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--brand-primary);
+  flex-shrink: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-dropdown__panel a:hover .nav-dropdown__num {
+  border-color: var(--brand-primary);
+  background: var(--brand-light);
+}
+
+/* ─── VIEW ALL row at bottom ─── */
+
+.nav-dropdown__panel .nav-dropdown__all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  padding: 12px 18px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-slate);
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+  background: var(--surface-off);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-dropdown__panel .nav-dropdown__all:hover {
+  background: var(--brand-light);
+  color: var(--brand-primary);
+}
+
+/* ─── MOBILE DRAWER: EXPERTISE ACCORDION ─── */
+
+.mobile-drawer__group {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mobile-drawer__row {
+  display: flex;
+  align-items: stretch;
+  min-height: 44px;
+}
+
+.mobile-drawer__row .mobile-drawer__link {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  margin: 0;
+  padding: 11px 0;
+  border-bottom: none;
+}
+
+.mobile-drawer__toggle {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.mobile-drawer__toggle:hover,
+.mobile-drawer__toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.mobile-drawer__toggle:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+.mobile-drawer__chevron {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: 0.75;
+  transition: transform 0.2s ease;
+}
+
+.mobile-drawer__group.is-open .mobile-drawer__chevron {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.mobile-drawer .nav-sub-links {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid rgba(255, 255, 255, 0.22);
+  margin: 0 0 8px 12px;
+  padding-left: 0;
+}
+
+.mobile-drawer .nav-sub-links[hidden] {
+  display: none !important;
+}
+
+.mobile-drawer .nav-sub-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  border-bottom: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.mobile-drawer .nav-sub-links a:hover,
+.mobile-drawer .nav-sub-links a:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.mobile-drawer .nav-sub-links a.active,
+.mobile-drawer .nav-sub-links a[aria-current='page'] {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.mobile-drawer .nav-sub-links .nav-dropdown__num {
+  width: 18px;
+  height: 18px;
+  font-size: 0.58rem;
+  border-color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.9);
+  background: transparent;
+}
+
+.mobile-drawer .nav-sub-links a:hover .nav-dropdown__num,
+.mobile-drawer .nav-sub-links a:focus-visible .nav-dropdown__num {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ─── HIDE DESKTOP DROPDOWN ON MOBILE ─── */
+
+@media (max-width: 767px) {
+  .nav-dropdown::after {
+    display: none;
+  }
+
+  .nav-dropdown__panel {
+    display: none !important;
+  }
+  .nav-dropdown > .nav-dropdown__trigger::after {
+    display: none;
+  }
+}
+
+/* Services hub: keep flyout above hero / sticky situation nav */
+body.services-page .site-header:has(.nav-dropdown:hover),
+body.services-page .site-header:has(.nav-dropdown:focus-within) {
+  z-index: 60;
+}
+
+/* ─── Typography: post-Preflight overrides (this file loads after styles.css) ─── */
+
+.about-page h2,
+.about-page .section-head h2,
+.certificates-page h2,
+.certificates-page .section-head h2,
+.our-approach-page h2,
+.our-approach-page .section-head h2,
+.work-journey-page h2,
+.work-journey-page .section-head h2,
+.regions-page h2,
+.regions-page .section-head h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.our-approach-page .approach-hero__instrument-label {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+/* ─── REDUCED MOTION ─── */
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-dropdown__panel {
+    transition: opacity 0.1s ease,
+                visibility 0.1s ease;
+    transform: translateX(-50%) !important;
+  }
+  .nav-dropdown > .nav-dropdown__trigger::after {
+    transition: none;
+  }
+
+  .mobile-drawer__chevron {
+    transition: none;
+  }
+}

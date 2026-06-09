@@ -1,0 +1,32 @@
+{
+  "name": "medimotive-site",
+  "private": true,
+  "scripts": {
+    "dev": "node tools/dev.mjs",
+    "build:css": "postcss assets/input.css -o assets/styles.css",
+    "convert:images": "node tools/convert-images.mjs",
+    "sitemap": "node tools/generate-sitemap.mjs",
+    "sync:vercel-urls": "node tools/sync-vercel-clean-urls.mjs",
+    "migrate:clean-urls": "node tools/migrate-clean-urls.mjs",
+    "root-assets": "node tools/root-absolute-assets.mjs",
+    "urls:clean": "node tools/sync-vercel-clean-urls.mjs && node tools/migrate-clean-urls.mjs && node tools/root-absolute-assets.mjs && node tools/apply-seo.mjs && node tools/generate-sitemap.mjs",
+    "verify:clean-urls": "node tools/verify-clean-urls.mjs",
+    "gsc:verify": "node tools/apply-google-verification.mjs",
+    "build:favicons": "node tools/build-favicons.mjs",
+    "build:og": "node tools/build-og.mjs",
+    "certificates:html": "node tools/generate-certificates-html.mjs",
+    "build": "npm run build:css && npm run build:og && npm run sitemap",
+    "verify:content": "python3 tools/verify-content.py"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^8.0.1",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.17",
+    "to-ico": "^1.1.5"
+  }
+}

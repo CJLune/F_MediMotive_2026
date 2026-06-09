@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="MediMotive">
+  <!-- brand-slate: matches header + theme-color -->
+  <rect width="32" height="32" rx="6" fill="#486966"/>
+  <!-- Bold M — wide stems, shallow center notch (reads at 16px) -->
+  <path fill="#ffffff" d="M7 24V8h4.2l4.8 9.2L20.8 8H25v16h-3.8l-4.6-8.8-4.6 8.8H7z"/>
+</svg>

@@ -1,0 +1,5680 @@
+{
+  "generatedAt": "2026-05-28T23:24:13.799Z",
+  "breakpoints": {
+    "overflow": [
+      375,
+      390,
+      768,
+      920
+    ],
+    "touch": [
+      375,
+      390
+    ],
+    "font": [
+      375
+    ],
+    "img": [
+      375,
+      390
+    ],
+    "grid": [
+      375,
+      390,
+      768,
+      920
+    ],
+    "sticky": [
+      375
+    ]
+  },
+  "phase1": {
+    "testA": [],
+    "testB": [
+      {
+        "page": "index.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "View all certificate records →",
+            "class": "link",
+            "height": 19,
+            "width": 194
+          },
+          {
+            "tag": "A",
+            "text": "Our Approach →",
+            "class": "link",
+            "height": 18,
+            "width": 106
+          }
+        ]
+      },
+      {
+        "page": "index.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "View all certificate records →",
+            "class": "link",
+            "height": 19,
+            "width": 194
+          },
+          {
+            "tag": "A",
+            "text": "Our Approach →",
+            "class": "link",
+            "height": 18,
+            "width": 106
+          }
+        ]
+      },
+      {
+        "page": "about.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          }
+        ]
+      },
+      {
+        "page": "about.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          }
+        ]
+      },
+      {
+        "page": "services.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Crisis on the line",
+            "class": "expertise-situation-nav__link",
+            "height": 43,
+            "width": 161
+          },
+          {
+            "tag": "A",
+            "text": "Supplier / OEM pressure",
+            "class": "expertise-situation-nav__link",
+            "height": 43,
+            "width": 161
+          },
+          {
+            "tag": "A",
+            "text": "Ramp-up & volume",
+            "class": "expertise-situation-nav__link",
+            "height": 43,
+            "width": 161
+          },
+          {
+            "tag": "A",
+            "text": "Before production starts",
+            "class": "expertise-situation-nav__link",
+            "height": 43,
+            "width": 161
+          },
+          {
+            "tag": "A",
+            "text": "Audit / regulatory",
+            "class": "expertise-situation-nav__link",
+            "height": 40,
+            "width": 161
+          },
+          {
+            "tag": "A",
+            "text": "Knowledge at risk",
+            "class": "expertise-situation-nav__link",
+            "height": 40,
+            "width": 161
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 290
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 293
+          },
+          {
+            "tag": "A",
+            "text": "Case: coated aluminium →",
+            "class": "expertise-card__case-link",
+            "height": 20,
+            "width": 293
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 293
+          },
+          {
+            "tag": "A",
+            "text": "Case: 100/yr → 1,500/month →",
+            "class": "expertise-card__case-link",
+            "height": 20,
+            "width": 293
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 293
+          },
+          {
+            "tag": "A",
+            "text": "Case: adhesion specification gap →",
+            "class": "expertise-card__case-link",
+            "height": 20,
+            "width": 293
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 293
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 293
+          },
+          {
+            "tag": "A",
+            "text": "Rapid response",
+            "class": "",
+            "height": 26,
+            "width": 116
+          },
+          {
+            "tag": "A",
+            "text": "Supplier quality",
+            "class": "",
+            "height": 26,
+            "width": 124
+          },
+          {
+            "tag": "A",
+            "text": "Early-phase risk",
+            "class": "",
+            "height": 26,
+            "width": 124
+          },
+          {
+            "tag": "A",
+            "text": "QMS & regulatory",
+            "class": "",
+            "height": 26,
+            "width": 131
+          },
+          {
+            "tag": "A",
+            "text": "Ramp-up",
+            "class": "",
+            "height": 26,
+            "width": 74
+          },
+          {
+            "tag": "A",
+            "text": "QMS & regulatory",
+            "class": "",
+            "height": 26,
+            "width": 131
+          },
+          {
+            "tag": "A",
+            "text": "Knowledge gap",
+            "class": "",
+            "height": 26,
+            "width": 115
+          }
+        ]
+      },
+      {
+        "page": "services.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Crisis on the line",
+            "class": "expertise-situation-nav__link",
+            "height": 43,
+            "width": 168
+          },
+          {
+            "tag": "A",
+            "text": "Supplier / OEM pressure",
+            "class": "expertise-situation-nav__link",
+            "height": 43,
+            "width": 168
+          },
+          {
+            "tag": "A",
+            "text": "Ramp-up & volume",
+            "class": "expertise-situation-nav__link",
+            "height": 43,
+            "width": 168
+          },
+          {
+            "tag": "A",
+            "text": "Before production starts",
+            "class": "expertise-situation-nav__link",
+            "height": 43,
+            "width": 168
+          },
+          {
+            "tag": "A",
+            "text": "Audit / regulatory",
+            "class": "expertise-situation-nav__link",
+            "height": 40,
+            "width": 168
+          },
+          {
+            "tag": "A",
+            "text": "Knowledge at risk",
+            "class": "expertise-situation-nav__link",
+            "height": 40,
+            "width": 168
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 308
+          },
+          {
+            "tag": "A",
+            "text": "Case: coated aluminium →",
+            "class": "expertise-card__case-link",
+            "height": 20,
+            "width": 308
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 308
+          },
+          {
+            "tag": "A",
+            "text": "Case: 100/yr → 1,500/month →",
+            "class": "expertise-card__case-link",
+            "height": 20,
+            "width": 308
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 308
+          },
+          {
+            "tag": "A",
+            "text": "Case: adhesion specification gap →",
+            "class": "expertise-card__case-link",
+            "height": 20,
+            "width": 308
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 308
+          },
+          {
+            "tag": "A",
+            "text": "Open expertise page →",
+            "class": "expertise-bento__cta expertise-card__cta",
+            "height": 21,
+            "width": 308
+          },
+          {
+            "tag": "A",
+            "text": "Rapid response",
+            "class": "",
+            "height": 26,
+            "width": 116
+          },
+          {
+            "tag": "A",
+            "text": "Supplier quality",
+            "class": "",
+            "height": 26,
+            "width": 124
+          },
+          {
+            "tag": "A",
+            "text": "Early-phase risk",
+            "class": "",
+            "height": 26,
+            "width": 124
+          },
+          {
+            "tag": "A",
+            "text": "QMS & regulatory",
+            "class": "",
+            "height": 26,
+            "width": 131
+          },
+          {
+            "tag": "A",
+            "text": "Ramp-up",
+            "class": "",
+            "height": 26,
+            "width": 74
+          },
+          {
+            "tag": "A",
+            "text": "QMS & regulatory",
+            "class": "",
+            "height": 26,
+            "width": 131
+          },
+          {
+            "tag": "A",
+            "text": "Knowledge gap",
+            "class": "",
+            "height": 26,
+            "width": 115
+          }
+        ]
+      },
+      {
+        "page": "case-studies.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          }
+        ]
+      },
+      {
+        "page": "case-studies.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          }
+        ]
+      },
+      {
+        "page": "contact.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "LinkedIn",
+            "class": "social-link linkedin-link",
+            "height": 25,
+            "width": 83
+          },
+          {
+            "tag": "A",
+            "text": "XING",
+            "class": "social-link xing-link",
+            "height": 25,
+            "width": 42
+          }
+        ]
+      },
+      {
+        "page": "contact.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "LinkedIn",
+            "class": "social-link linkedin-link",
+            "height": 25,
+            "width": 83
+          },
+          {
+            "tag": "A",
+            "text": "XING",
+            "class": "social-link xing-link",
+            "height": 25,
+            "width": 42
+          }
+        ]
+      },
+      {
+        "page": "certificates.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 212
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "class": "",
+            "height": 21,
+            "width": 38
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 305
+          }
+        ]
+      },
+      {
+        "page": "certificates.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 227
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "class": "",
+            "height": 21,
+            "width": 38
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          },
+          {
+            "tag": "BUTTON",
+            "text": "View certificate",
+            "class": "cert-view-btn",
+            "height": 21,
+            "width": 320
+          }
+        ]
+      },
+      {
+        "page": "regions.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 180
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "class": "",
+            "height": 21,
+            "width": 38
+          },
+          {
+            "tag": "A",
+            "text": "View certificates",
+            "class": "",
+            "height": 21,
+            "width": 106
+          },
+          {
+            "tag": "A",
+            "text": "Visual proof",
+            "class": "",
+            "height": 21,
+            "width": 77
+          },
+          {
+            "tag": "A",
+            "text": "Our Approach",
+            "class": "",
+            "height": 21,
+            "width": 87
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "class": "link",
+            "height": 19,
+            "width": 41
+          }
+        ]
+      },
+      {
+        "page": "regions.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 195
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "class": "",
+            "height": 21,
+            "width": 38
+          },
+          {
+            "tag": "A",
+            "text": "View certificates",
+            "class": "",
+            "height": 21,
+            "width": 106
+          },
+          {
+            "tag": "A",
+            "text": "Visual proof",
+            "class": "",
+            "height": 21,
+            "width": 77
+          },
+          {
+            "tag": "A",
+            "text": "Our Approach",
+            "class": "",
+            "height": 21,
+            "width": 87
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "class": "link",
+            "height": 19,
+            "width": 41
+          }
+        ]
+      },
+      {
+        "page": "our-approach.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "link",
+            "height": 23,
+            "width": 135
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "link",
+            "height": 23,
+            "width": 135
+          }
+        ]
+      },
+      {
+        "page": "our-approach.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "link",
+            "height": 23,
+            "width": 135
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "link",
+            "height": 23,
+            "width": 135
+          }
+        ]
+      },
+      {
+        "page": "work-journey.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 180
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "class": "",
+            "height": 21,
+            "width": 38
+          },
+          {
+            "tag": "A",
+            "text": "About MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 116
+          },
+          {
+            "tag": "A",
+            "text": "Regional context",
+            "class": "",
+            "height": 21,
+            "width": 106
+          },
+          {
+            "tag": "A",
+            "text": "Our Approach",
+            "class": "",
+            "height": 21,
+            "width": 87
+          },
+          {
+            "tag": "A",
+            "text": "case studies",
+            "class": "link",
+            "height": 40,
+            "width": 259
+          },
+          {
+            "tag": "A",
+            "text": "work contexts on About",
+            "class": "link",
+            "height": 19,
+            "width": 157
+          }
+        ]
+      },
+      {
+        "page": "work-journey.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 195
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "About",
+            "class": "",
+            "height": 21,
+            "width": 38
+          },
+          {
+            "tag": "A",
+            "text": "About MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 116
+          },
+          {
+            "tag": "A",
+            "text": "Regional context",
+            "class": "",
+            "height": 21,
+            "width": 106
+          },
+          {
+            "tag": "A",
+            "text": "Our Approach",
+            "class": "",
+            "height": 21,
+            "width": 87
+          },
+          {
+            "tag": "A",
+            "text": "case studies",
+            "class": "link",
+            "height": 18,
+            "width": 81
+          },
+          {
+            "tag": "A",
+            "text": "work contexts on About",
+            "class": "link",
+            "height": 19,
+            "width": 157
+          }
+        ]
+      },
+      {
+        "page": "rapid-response-troubleshooting.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "ed-case-callout__link",
+            "height": 16,
+            "width": 130
+          }
+        ]
+      },
+      {
+        "page": "rapid-response-troubleshooting.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "ed-case-callout__link",
+            "height": 16,
+            "width": 130
+          }
+        ]
+      },
+      {
+        "page": "supplier-quality-complaint-management.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "ed-case-callout__link",
+            "height": 16,
+            "width": 130
+          }
+        ]
+      },
+      {
+        "page": "supplier-quality-complaint-management.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "ed-case-callout__link",
+            "height": 16,
+            "width": 130
+          }
+        ]
+      },
+      {
+        "page": "ramp-up-process-stability.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "ed-case-callout__link",
+            "height": 16,
+            "width": 130
+          }
+        ]
+      },
+      {
+        "page": "ramp-up-process-stability.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "ed-case-callout__link",
+            "height": 16,
+            "width": 130
+          }
+        ]
+      },
+      {
+        "page": "early-phase-risk-design-for-quality.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "ed-case-callout__link",
+            "height": 16,
+            "width": 130
+          }
+        ]
+      },
+      {
+        "page": "early-phase-risk-design-for-quality.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "Read the full case →",
+            "class": "ed-case-callout__link",
+            "height": 16,
+            "width": 130
+          }
+        ]
+      },
+      {
+        "page": "qms-audit-regulatory-support.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "View all certificate records →",
+            "class": "link",
+            "height": 20,
+            "width": 211
+          }
+        ]
+      },
+      {
+        "page": "qms-audit-regulatory-support.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          },
+          {
+            "tag": "A",
+            "text": "View all certificate records →",
+            "class": "link",
+            "height": 20,
+            "width": 211
+          }
+        ]
+      },
+      {
+        "page": "knowledge-gap-transition-security.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          }
+        ]
+      },
+      {
+        "page": "knowledge-gap-transition-security.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Expertise",
+            "class": "",
+            "height": 21,
+            "width": 59
+          }
+        ]
+      },
+      {
+        "page": "case-coated-aluminum-parts.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Case Studies",
+            "class": "",
+            "height": 21,
+            "width": 83
+          },
+          {
+            "tag": "A",
+            "text": "Supplier quality & complaints",
+            "class": "link",
+            "height": 17,
+            "width": 185
+          },
+          {
+            "tag": "A",
+            "text": "Early-phase risk",
+            "class": "link",
+            "height": 17,
+            "width": 102
+          },
+          {
+            "tag": "A",
+            "text": "Production troubleshooting",
+            "class": "link",
+            "height": 17,
+            "width": 173
+          },
+          {
+            "tag": "A",
+            "text": "← All case studies",
+            "class": "link",
+            "height": 17,
+            "width": 117
+          },
+          {
+            "tag": "A",
+            "text": "Case 02: Ramp-up stability →",
+            "class": "link",
+            "height": 17,
+            "width": 187
+          }
+        ]
+      },
+      {
+        "page": "case-coated-aluminum-parts.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Case Studies",
+            "class": "",
+            "height": 21,
+            "width": 83
+          },
+          {
+            "tag": "A",
+            "text": "Supplier quality & complaints",
+            "class": "link",
+            "height": 17,
+            "width": 185
+          },
+          {
+            "tag": "A",
+            "text": "Early-phase risk",
+            "class": "link",
+            "height": 17,
+            "width": 102
+          },
+          {
+            "tag": "A",
+            "text": "Production troubleshooting",
+            "class": "link",
+            "height": 17,
+            "width": 173
+          },
+          {
+            "tag": "A",
+            "text": "← All case studies",
+            "class": "link",
+            "height": 17,
+            "width": 117
+          },
+          {
+            "tag": "A",
+            "text": "Case 02: Ramp-up stability →",
+            "class": "link",
+            "height": 17,
+            "width": 187
+          }
+        ]
+      },
+      {
+        "page": "case-production-ramp-up.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 17,
+            "width": 228
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Case Studies",
+            "class": "",
+            "height": 21,
+            "width": 83
+          },
+          {
+            "tag": "A",
+            "text": "Ramp-up & process stability",
+            "class": "link",
+            "height": 17,
+            "width": 178
+          },
+          {
+            "tag": "A",
+            "text": "QMS & regulatory",
+            "class": "link",
+            "height": 17,
+            "width": 112
+          },
+          {
+            "tag": "A",
+            "text": "Supplier quality",
+            "class": "link",
+            "height": 17,
+            "width": 99
+          },
+          {
+            "tag": "A",
+            "text": "← Case 01: Recall reversal",
+            "class": "link",
+            "height": 17,
+            "width": 169
+          },
+          {
+            "tag": "A",
+            "text": "All case studies",
+            "class": "link",
+            "height": 17,
+            "width": 100
+          }
+        ]
+      },
+      {
+        "page": "case-production-ramp-up.html",
+        "viewport": 390,
+        "items": [
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "brand",
+            "height": 18,
+            "width": 243
+          },
+          {
+            "tag": "A",
+            "text": "MediMotive",
+            "class": "",
+            "height": 21,
+            "width": 75
+          },
+          {
+            "tag": "A",
+            "text": "Case Studies",
+            "class": "",
+            "height": 21,
+            "width": 83
+          },
+          {
+            "tag": "A",
+            "text": "Ramp-up & process stability",
+            "class": "link",
+            "height": 17,
+            "width": 178
+          },
+          {
+            "tag": "A",
+            "text": "QMS & regulatory",
+            "class": "link",
+            "height": 39,
+            "width": 338
+          },
+          {
+            "tag": "A",
+            "text": "Supplier quality",
+            "class": "link",
+            "height": 17,
+            "width": 99
+          },
+          {
+            "tag": "A",
+            "text": "← Case 01: Recall reversal",
+            "class": "link",
+            "height": 17,
+            "width": 169
+          },
+          {
+            "tag": "A",
+            "text": "All case studies",
+            "class": "link",
+            "height": 17,
+            "width": 100
+          }
+        ]
+      }
+    ],
+    "testC": [
+      {
+        "page": "index.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "Machining · Assembly · Supplie"
+          },
+          {
+            "tag": "P",
+            "class": "home-hero-visual-caption",
+            "fontSize": "12.48px",
+            "text": "Real manufacturing, supplier, "
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Case Proof"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Case Proof"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Organic Connectivity"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Organic Connectivity"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Shop-Floor Pragmatism"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Shop-Floor Pragmatism"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Formal Credentials"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Formal Credentials"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Transition Security"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Transition Security"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Case 01 · Recall reversal"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Case 02 · Ramp-up stability"
+          },
+          {
+            "tag": "SPAN",
+            "class": "home-compare-criterion",
+            "fontSize": "12.48px",
+            "text": "Starting Point"
+          }
+        ]
+      },
+      {
+        "page": "about.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "Company profile"
+          },
+          {
+            "tag": "P",
+            "class": "about-hero__caption",
+            "fontSize": "13.12px",
+            "text": "Real production, supplier, and"
+          },
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "The founder behind the MediMot"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "services.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "machining · assembly · automot"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "6 work areas"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "2 verified cases"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Shop-floor first"
+          },
+          {
+            "tag": "A",
+            "class": "expertise-situation-nav__link",
+            "fontSize": "10.88px",
+            "text": "Crisis on the line"
+          },
+          {
+            "tag": "A",
+            "class": "expertise-situation-nav__link",
+            "fontSize": "10.88px",
+            "text": "Supplier / OEM pressure"
+          },
+          {
+            "tag": "A",
+            "class": "expertise-situation-nav__link",
+            "fontSize": "10.88px",
+            "text": "Ramp-up & volume"
+          },
+          {
+            "tag": "A",
+            "class": "expertise-situation-nav__link",
+            "fontSize": "10.88px",
+            "text": "Before production starts"
+          },
+          {
+            "tag": "A",
+            "class": "expertise-situation-nav__link",
+            "fontSize": "10.88px",
+            "text": "Audit / regulatory"
+          },
+          {
+            "tag": "A",
+            "class": "expertise-situation-nav__link",
+            "fontSize": "10.88px",
+            "text": "Knowledge at risk"
+          },
+          {
+            "tag": "P",
+            "class": "expertise-bento__trigger expertise-card__trigger",
+            "fontSize": "13.6px",
+            "text": "Typical trigger: recurring def"
+          },
+          {
+            "tag": "SPAN",
+            "class": "expertise-card__guide-label",
+            "fontSize": "13.12px",
+            "text": "Situation guide on expertise p"
+          },
+          {
+            "tag": "P",
+            "class": "expertise-bento__trigger expertise-card__trigger",
+            "fontSize": "13.6px",
+            "text": "Typical trigger: complaint loo"
+          },
+          {
+            "tag": "A",
+            "class": "expertise-card__case-link",
+            "fontSize": "13.12px",
+            "text": "Case: coated aluminium →"
+          },
+          {
+            "tag": "P",
+            "class": "expertise-bento__trigger expertise-card__trigger",
+            "fontSize": "13.6px",
+            "text": "Typical trigger: demand has ou"
+          }
+        ]
+      },
+      {
+        "page": "case-studies.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "12px",
+            "text": "Proof · verified outcomes"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Case 01 · Recall reversal"
+          },
+          {
+            "tag": "SPAN",
+            "class": "case-situation-tag",
+            "fontSize": "11.52px",
+            "text": "Supplier failure"
+          },
+          {
+            "tag": "SPAN",
+            "class": "case-situation-tag",
+            "fontSize": "11.52px",
+            "text": "Field exposure"
+          },
+          {
+            "tag": "SPAN",
+            "class": "case-situation-tag",
+            "fontSize": "11.52px",
+            "text": "Process redesign"
+          },
+          {
+            "tag": "SPAN",
+            "class": "case-featured-card__cta",
+            "fontSize": "12.48px",
+            "text": "Read full case"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Case 02 · Ramp-up stability"
+          },
+          {
+            "tag": "SPAN",
+            "class": "case-situation-tag",
+            "fontSize": "11.52px",
+            "text": "Demand spike"
+          },
+          {
+            "tag": "SPAN",
+            "class": "case-situation-tag",
+            "fontSize": "11.52px",
+            "text": "Regulatory compliance"
+          },
+          {
+            "tag": "SPAN",
+            "class": "case-situation-tag",
+            "fontSize": "11.52px",
+            "text": "12 months"
+          },
+          {
+            "tag": "SPAN",
+            "class": "case-featured-card__cta",
+            "fontSize": "12.48px",
+            "text": "Read full case"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "contact.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "Contact · direct professional "
+          },
+          {
+            "tag": "SPAN",
+            "class": "contact-hero__mailto-direct",
+            "fontSize": "11.52px",
+            "text": "Send Email"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "certificates.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "Credentials · qualifications a"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Audit"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Audit"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Methods"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Methods"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Quality Management"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Quality Management"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Regulatory Affairs"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Regulatory Affairs"
+          },
+          {
+            "tag": "SPAN",
+            "class": "cert-context",
+            "fontSize": "12.8px",
+            "text": "VDA · process audit"
+          },
+          {
+            "tag": "P",
+            "class": "cert-caption",
+            "fontSize": "13.76px",
+            "text": "Process audit competence for s"
+          },
+          {
+            "tag": "SPAN",
+            "class": "cert-context",
+            "fontSize": "12.8px",
+            "text": "EOQ · audit"
+          },
+          {
+            "tag": "P",
+            "class": "cert-caption",
+            "fontSize": "13.76px",
+            "text": "European Organization for Qual"
+          },
+          {
+            "tag": "SPAN",
+            "class": "cert-context",
+            "fontSize": "12.8px",
+            "text": "TÜV · methods"
+          },
+          {
+            "tag": "P",
+            "class": "cert-caption",
+            "fontSize": "13.76px",
+            "text": "Methods and analytical foundat"
+          }
+        ]
+      },
+      {
+        "page": "regions.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "Regional roots · industry cont"
+          },
+          {
+            "tag": "P",
+            "class": "regions-hero__caption",
+            "fontSize": "12.48px",
+            "text": "Real production, supplier, and"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Northern Germany"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Northern Germany"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Extended corridor"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Extended corridor"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Specialist industries"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Specialist industries"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "International suppliers"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "International suppliers"
+          },
+          {
+            "tag": "P",
+            "class": "regions-section-label",
+            "fontSize": "10.88px",
+            "text": "Home base"
+          },
+          {
+            "tag": "P",
+            "class": "regions-section-label",
+            "fontSize": "10.88px",
+            "text": "Extended Northern Germany"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Hamburg"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Hannover"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Wider corridor"
+          }
+        ]
+      },
+      {
+        "page": "our-approach.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "Approach · practical failure-p"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "11.52px",
+            "text": "Supplier decisions"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "11.52px",
+            "text": "Specification gaps"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "11.52px",
+            "text": "Production behaviour"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "11.52px",
+            "text": "Management clarity"
+          },
+          {
+            "tag": "SPAN",
+            "class": "approach-diagnostic-map__status",
+            "fontSize": "11.52px",
+            "text": "Connected failure path"
+          },
+          {
+            "tag": "SPAN",
+            "class": "trace-stage__label",
+            "fontSize": "10.88px",
+            "text": "Purchasing"
+          },
+          {
+            "tag": "SPAN",
+            "class": "trace-stage__label",
+            "fontSize": "10.88px",
+            "text": "Supplier"
+          },
+          {
+            "tag": "SPAN",
+            "class": "trace-stage__label",
+            "fontSize": "10.88px",
+            "text": "Engineering"
+          },
+          {
+            "tag": "SPAN",
+            "class": "trace-stage__label",
+            "fontSize": "10.88px",
+            "text": "Production"
+          },
+          {
+            "tag": "SPAN",
+            "class": "trace-stage__label",
+            "fontSize": "10.88px",
+            "text": "Quality"
+          },
+          {
+            "tag": "SPAN",
+            "class": "trace-stage__label",
+            "fontSize": "10.88px",
+            "text": "Management"
+          },
+          {
+            "tag": "P",
+            "class": "diagnostic-step__label",
+            "fontSize": "12.16px",
+            "text": "Local decision"
+          },
+          {
+            "tag": "P",
+            "class": "diagnostic-step__label",
+            "fontSize": "12.16px",
+            "text": "Supplier assumption"
+          },
+          {
+            "tag": "P",
+            "class": "diagnostic-step__label",
+            "fontSize": "12.16px",
+            "text": "Specification gap"
+          }
+        ]
+      },
+      {
+        "page": "work-journey.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "11.52px",
+            "text": "Visual proof"
+          },
+          {
+            "tag": "P",
+            "class": "journey-hero__caption",
+            "fontSize": "12.48px",
+            "text": "Real production, supplier, aud"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Shop-floor"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Shop-floor"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Interfaces"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Interfaces"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "Regulated"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "Regulated"
+          },
+          {
+            "tag": "LI",
+            "class": "",
+            "fontSize": "10.88px",
+            "text": "International"
+          },
+          {
+            "tag": "A",
+            "class": "",
+            "fontSize": "10.4px",
+            "text": "International"
+          },
+          {
+            "tag": "P",
+            "class": "journey-section-label",
+            "fontSize": "10.88px",
+            "text": "Work contexts"
+          },
+          {
+            "tag": "SPAN",
+            "class": "journey-tile__pill",
+            "fontSize": "9.92px",
+            "text": "Shop-floor"
+          },
+          {
+            "tag": "SPAN",
+            "class": "journey-tile__pill",
+            "fontSize": "9.92px",
+            "text": "Interfaces"
+          },
+          {
+            "tag": "SPAN",
+            "class": "journey-tile__pill",
+            "fontSize": "9.92px",
+            "text": "Regulated"
+          },
+          {
+            "tag": "SPAN",
+            "class": "journey-tile__pill",
+            "fontSize": "9.92px",
+            "text": "International"
+          }
+        ]
+      },
+      {
+        "page": "rapid-response-troubleshooting.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__situation",
+            "fontSize": "11.52px",
+            "text": "Crisis on the line"
+          },
+          {
+            "tag": "P",
+            "class": "ed-hero__qualifier-label",
+            "fontSize": "11.52px",
+            "text": "This applies if:"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Recurring defects"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Perfect Part Paradox"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Measurement deadlocks"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "High-pressure situations"
+          },
+          {
+            "tag": "FIGCAPTION",
+            "class": "",
+            "fontSize": "12.48px",
+            "text": "Real production context — anon"
+          },
+          {
+            "tag": "P",
+            "class": "ed-case-callout__label",
+            "fontSize": "10.88px",
+            "text": "Verified outcome"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "supplier-quality-complaint-management.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__situation",
+            "fontSize": "11.52px",
+            "text": "Supplier / OEM pressure"
+          },
+          {
+            "tag": "P",
+            "class": "ed-hero__qualifier-label",
+            "fontSize": "11.52px",
+            "text": "This applies if:"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Complaint loops"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "OEM Level 2"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Quality Assurance Agreement"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Technical bridge communication"
+          },
+          {
+            "tag": "FIGCAPTION",
+            "class": "",
+            "fontSize": "12.48px",
+            "text": "Real production context — anon"
+          },
+          {
+            "tag": "P",
+            "class": "ed-case-callout__label",
+            "fontSize": "10.88px",
+            "text": "Verified outcome"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "ramp-up-process-stability.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__situation",
+            "fontSize": "11.52px",
+            "text": "Ramp-up & volume"
+          },
+          {
+            "tag": "P",
+            "class": "ed-hero__qualifier-label",
+            "fontSize": "11.52px",
+            "text": "This applies if:"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Production systems where"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Assembly line redesign"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Supplier co-engineering"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Process validation under"
+          },
+          {
+            "tag": "FIGCAPTION",
+            "class": "",
+            "fontSize": "12.48px",
+            "text": "Real production context — anon"
+          },
+          {
+            "tag": "P",
+            "class": "ed-case-callout__label",
+            "fontSize": "10.88px",
+            "text": "Verified outcome"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "early-phase-risk-design-for-quality.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__situation",
+            "fontSize": "11.52px",
+            "text": "Before production starts"
+          },
+          {
+            "tag": "P",
+            "class": "ed-hero__qualifier-label",
+            "fontSize": "11.52px",
+            "text": "This applies if:"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Hidden customer expectations"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Manufacturability and producib"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Tolerance risk in"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Specification standards that"
+          },
+          {
+            "tag": "FIGCAPTION",
+            "class": "",
+            "fontSize": "12.48px",
+            "text": "Real production context — anon"
+          },
+          {
+            "tag": "P",
+            "class": "ed-case-callout__label",
+            "fontSize": "10.88px",
+            "text": "Verified outcome"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "qms-audit-regulatory-support.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__situation",
+            "fontSize": "11.52px",
+            "text": "Audit / regulatory"
+          },
+          {
+            "tag": "P",
+            "class": "ed-hero__qualifier-label",
+            "fontSize": "11.52px",
+            "text": "This applies if:"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "VDA 6.3 process"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "ISO 9001, ISO"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Corrective and preventive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Validation logic (DQ/IQ/OQ/PQ)"
+          },
+          {
+            "tag": "FIGCAPTION",
+            "class": "",
+            "fontSize": "12.48px",
+            "text": "Real production context — anon"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "knowledge-gap-transition-security.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__situation",
+            "fontSize": "11.52px",
+            "text": "Knowledge at risk"
+          },
+          {
+            "tag": "P",
+            "class": "ed-hero__qualifier-label",
+            "fontSize": "11.52px",
+            "text": "This applies if:"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Retiring master craftsmen"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Succession planning for"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Creating technical materials"
+          },
+          {
+            "tag": "SPAN",
+            "class": "ed-hero__chip",
+            "fontSize": "12px",
+            "text": "Verifying that the receiving"
+          },
+          {
+            "tag": "FIGCAPTION",
+            "class": "",
+            "fontSize": "12.48px",
+            "text": "Real production context — anon"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      },
+      {
+        "page": "case-coated-aluminum-parts.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "12px",
+            "text": "Case 01 · Recall reversal"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Case 01 · Recall reversal"
+          },
+          {
+            "tag": "FIGCAPTION",
+            "class": "",
+            "fontSize": "12.8px",
+            "text": "Anonymised supplier-quality co"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.44px",
+            "text": "part-cost reduction"
+          },
+          {
+            "tag": "SPAN",
+            "class": "metric__tag",
+            "fontSize": "10.88px",
+            "text": "Primary outcome"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "12.8px",
+            "text": "approximate field issue exposu"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "12.8px",
+            "text": "lead-time reduction"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "12.8px",
+            "text": "annual scrap exposure reductio"
+          },
+          {
+            "tag": "P",
+            "class": "step-phase",
+            "fontSize": "10.88px",
+            "text": "The situation"
+          },
+          {
+            "tag": "P",
+            "class": "step-phase",
+            "fontSize": "10.88px",
+            "text": "The hidden failure"
+          },
+          {
+            "tag": "P",
+            "class": "step-phase",
+            "fontSize": "10.88px",
+            "text": "The approach"
+          },
+          {
+            "tag": "P",
+            "class": "step-phase",
+            "fontSize": "10.88px",
+            "text": "The outcome"
+          },
+          {
+            "tag": "P",
+            "class": "notice__head",
+            "fontSize": "13.12px",
+            "text": "On disclosure"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          }
+        ]
+      },
+      {
+        "page": "case-production-ramp-up.html",
+        "viewport": 375,
+        "items": [
+          {
+            "tag": "DIV",
+            "class": "eyebrow",
+            "fontSize": "12px",
+            "text": "Case 02 · Ramp-up stability"
+          },
+          {
+            "tag": "SPAN",
+            "class": "pill",
+            "fontSize": "11.52px",
+            "text": "Case 02 · Ramp-up stability"
+          },
+          {
+            "tag": "FIGCAPTION",
+            "class": "",
+            "fontSize": "12.8px",
+            "text": "Anonymised ramp-up and assembl"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.44px",
+            "text": "stable production at full ramp"
+          },
+          {
+            "tag": "SPAN",
+            "class": "metric__tag",
+            "fontSize": "10.88px",
+            "text": "Primary outcome"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "12.8px",
+            "text": "original production capacity"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "12.8px",
+            "text": "per-piece cost reduction"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "12.8px",
+            "text": "from ramp-up decision to full-"
+          },
+          {
+            "tag": "P",
+            "class": "step-phase",
+            "fontSize": "10.88px",
+            "text": "The situation"
+          },
+          {
+            "tag": "P",
+            "class": "step-phase",
+            "fontSize": "10.88px",
+            "text": "The constraint"
+          },
+          {
+            "tag": "P",
+            "class": "step-phase",
+            "fontSize": "10.88px",
+            "text": "The approach"
+          },
+          {
+            "tag": "P",
+            "class": "step-phase",
+            "fontSize": "10.88px",
+            "text": "The outcome"
+          },
+          {
+            "tag": "P",
+            "class": "footer-founder-role",
+            "fontSize": "12.48px",
+            "text": "Founder · MediMotive"
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "© 2026 MediMotive. All rights "
+          },
+          {
+            "tag": "SPAN",
+            "class": "",
+            "fontSize": "13.12px",
+            "text": "Imprint · Privacy"
+          }
+        ]
+      }
+    ],
+    "testD": [],
+    "testE": [
+      {
+        "page": "work-journey.html",
+        "viewport": 375,
+        "multiColAtMobile": [
+          {
+            "class": "work-journey-collage work-journey-collage--bento",
+            "display": "grid",
+            "gridTemplateColumns": "12.4062px 12.4062px 12.4062px 12.4062px 12.4219px 12.4062px 12.4062px 12.4062px 12.4219px 12.4062px 12.4062px 12.4062px",
+            "columnCount": 12,
+            "flexDirection": "row",
+            "overflow": "visible",
+            "offsetWidth": 303
+          }
+        ]
+      },
+      {
+        "page": "work-journey.html",
+        "viewport": 390,
+        "multiColAtMobile": [
+          {
+            "class": "work-journey-collage work-journey-collage--bento",
+            "display": "grid",
+            "gridTemplateColumns": "13.6562px 13.6562px 13.6562px 13.6562px 13.6719px 13.6562px 13.6562px 13.6562px 13.6719px 13.6562px 13.6562px 13.6562px",
+            "columnCount": 12,
+            "flexDirection": "row",
+            "overflow": "visible",
+            "offsetWidth": 318
+          }
+        ]
+      }
+    ],
+    "testF": [
+      {
+        "page": "index.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "about.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "services.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          },
+          {
+            "class": "expertise-situation-nav-wrap",
+            "position": "sticky",
+            "height": 151,
+            "top": "64px"
+          }
+        ],
+        "totalStickyHeight": 205,
+        "viewportRemaining": 462,
+        "flagged": true
+      },
+      {
+        "page": "case-studies.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "contact.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "certificates.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "regions.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "our-approach.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "work-journey.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "rapid-response-troubleshooting.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          },
+          {
+            "class": "expertise-areas-nav",
+            "position": "sticky",
+            "height": 46,
+            "top": "60px"
+          }
+        ],
+        "totalStickyHeight": 100,
+        "viewportRemaining": 567,
+        "flagged": false
+      },
+      {
+        "page": "supplier-quality-complaint-management.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          },
+          {
+            "class": "expertise-areas-nav",
+            "position": "sticky",
+            "height": 46,
+            "top": "60px"
+          }
+        ],
+        "totalStickyHeight": 100,
+        "viewportRemaining": 567,
+        "flagged": false
+      },
+      {
+        "page": "ramp-up-process-stability.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          },
+          {
+            "class": "expertise-areas-nav",
+            "position": "sticky",
+            "height": 46,
+            "top": "60px"
+          }
+        ],
+        "totalStickyHeight": 100,
+        "viewportRemaining": 567,
+        "flagged": false
+      },
+      {
+        "page": "early-phase-risk-design-for-quality.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          },
+          {
+            "class": "expertise-areas-nav",
+            "position": "sticky",
+            "height": 46,
+            "top": "60px"
+          }
+        ],
+        "totalStickyHeight": 100,
+        "viewportRemaining": 567,
+        "flagged": false
+      },
+      {
+        "page": "qms-audit-regulatory-support.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          },
+          {
+            "class": "expertise-areas-nav",
+            "position": "sticky",
+            "height": 46,
+            "top": "60px"
+          }
+        ],
+        "totalStickyHeight": 100,
+        "viewportRemaining": 567,
+        "flagged": false
+      },
+      {
+        "page": "knowledge-gap-transition-security.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          },
+          {
+            "class": "expertise-areas-nav",
+            "position": "sticky",
+            "height": 46,
+            "top": "60px"
+          }
+        ],
+        "totalStickyHeight": 100,
+        "viewportRemaining": 567,
+        "flagged": false
+      },
+      {
+        "page": "case-coated-aluminum-parts.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      },
+      {
+        "page": "case-production-ramp-up.html",
+        "viewport": 375,
+        "stickies": [
+          {
+            "class": "site-header",
+            "position": "sticky",
+            "height": 54,
+            "top": "0px"
+          }
+        ],
+        "totalStickyHeight": 54,
+        "viewportRemaining": 613,
+        "flagged": false
+      }
+    ]
+  },
+  "phase2": [
+    {
+      "page": "index.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "index.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 28.08,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "index.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 42.4,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "index.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 42.4,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "index.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 51.2,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "index.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 40,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "start",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "about.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "About",
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "about.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "About",
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "about.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "About",
+        "h1": {
+          "fontSize": 35.2,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "about.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "About",
+        "h1": {
+          "fontSize": 35.2,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "about.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "About",
+        "h1": {
+          "fontSize": 46.08,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "about.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "About",
+        "h1": {
+          "fontSize": 47.2,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "services.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Expertise",
+        "h1": {
+          "fontSize": 25.5,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "situationNavPills": 6,
+        "faqLayout": true
+      }
+    },
+    {
+      "page": "services.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Expertise",
+        "h1": {
+          "fontSize": 26.52,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "situationNavPills": 6,
+        "faqLayout": true
+      }
+    },
+    {
+      "page": "services.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Expertise",
+        "h1": {
+          "fontSize": 35.2,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": true,
+        "situationNavPills": 6,
+        "faqLayout": true
+      }
+    },
+    {
+      "page": "services.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Expertise",
+        "h1": {
+          "fontSize": 35.2,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": true,
+        "situationNavPills": 6,
+        "faqLayout": true
+      }
+    },
+    {
+      "page": "services.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Expertise",
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": true,
+        "situationNavPills": 6,
+        "faqLayout": true
+      }
+    },
+    {
+      "page": "services.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Expertise",
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "left",
+        "heroHasActions": true,
+        "situationNavPills": 6,
+        "faqLayout": true
+      }
+    },
+    {
+      "page": "case-studies.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [
+          "Supplier failure",
+          "Field exposure",
+          "Process redesign"
+        ],
+        "caseTags02": [
+          "Demand spike",
+          "Regulatory compliance",
+          "12 months"
+        ],
+        "kpi75": "75%",
+        "kpi1500": "1,500/mo",
+        "visibleMailtoInMain": 0,
+        "anonBlock": true,
+        "closingCtaHeading": "Dealing with a comparable situation?"
+      }
+    },
+    {
+      "page": "case-studies.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [
+          "Supplier failure",
+          "Field exposure",
+          "Process redesign"
+        ],
+        "caseTags02": [
+          "Demand spike",
+          "Regulatory compliance",
+          "12 months"
+        ],
+        "kpi75": "75%",
+        "kpi1500": "1,500/mo",
+        "visibleMailtoInMain": 0,
+        "anonBlock": true,
+        "closingCtaHeading": "Dealing with a comparable situation?"
+      }
+    },
+    {
+      "page": "case-studies.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 36,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [
+          "Supplier failure",
+          "Field exposure",
+          "Process redesign"
+        ],
+        "caseTags02": [
+          "Demand spike",
+          "Regulatory compliance",
+          "12 months"
+        ],
+        "kpi75": "75%",
+        "kpi1500": "1,500/mo",
+        "visibleMailtoInMain": 0,
+        "anonBlock": true,
+        "closingCtaHeading": "Dealing with a comparable situation?"
+      }
+    },
+    {
+      "page": "case-studies.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 36,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [
+          "Supplier failure",
+          "Field exposure",
+          "Process redesign"
+        ],
+        "caseTags02": [
+          "Demand spike",
+          "Regulatory compliance",
+          "12 months"
+        ],
+        "kpi75": "75%",
+        "kpi1500": "1,500/mo",
+        "visibleMailtoInMain": 0,
+        "anonBlock": true,
+        "closingCtaHeading": "Dealing with a comparable situation?"
+      }
+    },
+    {
+      "page": "case-studies.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 44,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [
+          "Supplier failure",
+          "Field exposure",
+          "Process redesign"
+        ],
+        "caseTags02": [
+          "Demand spike",
+          "Regulatory compliance",
+          "12 months"
+        ],
+        "kpi75": "75%",
+        "kpi1500": "1,500/mo",
+        "visibleMailtoInMain": 0,
+        "anonBlock": true,
+        "closingCtaHeading": "Dealing with a comparable situation?"
+      }
+    },
+    {
+      "page": "case-studies.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 44,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 18,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [
+          "Supplier failure",
+          "Field exposure",
+          "Process redesign"
+        ],
+        "caseTags02": [
+          "Demand spike",
+          "Regulatory compliance",
+          "12 months"
+        ],
+        "kpi75": "75%",
+        "kpi1500": "1,500/mo",
+        "visibleMailtoInMain": 0,
+        "anonBlock": true,
+        "closingCtaHeading": "Dealing with a comparable situation?"
+      }
+    },
+    {
+      "page": "contact.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Contact",
+        "h1": {
+          "fontSize": 25.5,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 15.36,
+        "leadTextAlign": "center",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 8
+      }
+    },
+    {
+      "page": "contact.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Contact",
+        "h1": {
+          "fontSize": 26.52,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 15.36,
+        "leadTextAlign": "center",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 8
+      }
+    },
+    {
+      "page": "contact.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Contact",
+        "h1": {
+          "fontSize": 35.2,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "center",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "contact.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Contact",
+        "h1": {
+          "fontSize": 35.2,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "center",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "contact.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Contact",
+        "h1": {
+          "fontSize": 42.4,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "center",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "contact.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Contact",
+        "h1": {
+          "fontSize": 42.4,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "center",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "certificates.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 26.25,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "center",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 20
+      }
+    },
+    {
+      "page": "certificates.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 27.3,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "center",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 20
+      }
+    },
+    {
+      "page": "certificates.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "center",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "certificates.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "center",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "certificates.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "center",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "certificates.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "center"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "center",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "regions.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 32,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "regions.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 32,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "regions.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 32.256,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "regions.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 38.64,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "regions.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 43.008,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "regions.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 45.6,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "our-approach.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 25.5,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 15.68,
+        "leadTextAlign": "left",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 12
+      }
+    },
+    {
+      "page": "our-approach.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 26.52,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 15.68,
+        "leadTextAlign": "left",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 12
+      }
+    },
+    {
+      "page": "our-approach.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 34.4,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "our-approach.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 34.4,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "our-approach.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 42.4,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "our-approach.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 42.4,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": true
+      }
+    },
+    {
+      "page": "work-journey.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 32,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "work-journey.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 32,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "work-journey.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 32.256,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "work-journey.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 38.64,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "work-journey.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 43.008,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "work-journey.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 45.6,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "left",
+        "heroHasActions": false
+      }
+    },
+    {
+      "page": "rapid-response-troubleshooting.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 24.375,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "rapid-response-troubleshooting.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 25.35,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "rapid-response-troubleshooting.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "rapid-response-troubleshooting.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "rapid-response-troubleshooting.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "rapid-response-troubleshooting.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "supplier-quality-complaint-management.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 24.375,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "supplier-quality-complaint-management.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 25.35,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "supplier-quality-complaint-management.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "supplier-quality-complaint-management.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "supplier-quality-complaint-management.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "supplier-quality-complaint-management.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "ramp-up-process-stability.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 24.375,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "ramp-up-process-stability.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 25.35,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "ramp-up-process-stability.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "ramp-up-process-stability.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "ramp-up-process-stability.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "ramp-up-process-stability.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "early-phase-risk-design-for-quality.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 24.375,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "early-phase-risk-design-for-quality.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 25.35,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "early-phase-risk-design-for-quality.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "early-phase-risk-design-for-quality.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "early-phase-risk-design-for-quality.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "early-phase-risk-design-for-quality.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "qms-audit-regulatory-support.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 24.375,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "qms-audit-regulatory-support.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 25.35,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "qms-audit-regulatory-support.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "qms-audit-regulatory-support.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "qms-audit-regulatory-support.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "qms-audit-regulatory-support.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "knowledge-gap-transition-security.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 24.375,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "knowledge-gap-transition-security.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 25.35,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "heroCtaFullWidth": true,
+        "heroCtaLeftGutter": 24,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "knowledge-gap-transition-security.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "knowledge-gap-transition-security.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "knowledge-gap-transition-security.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 16.32,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "knowledge-gap-transition-security.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": null,
+        "h1": {
+          "fontSize": 16,
+          "visible": true,
+          "textAlign": "start"
+        },
+        "leadFontSize": 18.4,
+        "leadTextAlign": "start",
+        "heroHasActions": true,
+        "edHeroBadge": true,
+        "edChips": 4,
+        "edNav": true,
+        "edHeroImage": false
+      }
+    },
+    {
+      "page": "case-coated-aluminum-parts.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-coated-aluminum-parts.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-coated-aluminum-parts.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 36,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-coated-aluminum-parts.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 36,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-coated-aluminum-parts.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 44,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-coated-aluminum-parts.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 44,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 18,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-production-ramp-up.html",
+      "viewport": 375,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-production-ramp-up.html",
+      "viewport": 390,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 28,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-production-ramp-up.html",
+      "viewport": 768,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 36,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-production-ramp-up.html",
+      "viewport": 920,
+      "checks": {
+        "navLinksVisible": false,
+        "menuBtnVisible": true,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 36,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-production-ramp-up.html",
+      "viewport": 1024,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 44,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 16.8,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    },
+    {
+      "page": "case-production-ramp-up.html",
+      "viewport": 1440,
+      "checks": {
+        "navLinksVisible": true,
+        "menuBtnVisible": false,
+        "activeNavText": "Case Studies",
+        "h1": {
+          "fontSize": 44,
+          "visible": true,
+          "textAlign": "left"
+        },
+        "leadFontSize": 18,
+        "leadTextAlign": "left",
+        "heroHasActions": false,
+        "caseHeroTextAlign": "left",
+        "caseHeroHasActions": false,
+        "caseTags01": [],
+        "caseTags02": [],
+        "visibleMailtoInMain": 0,
+        "anonBlock": false,
+        "closingCtaHeading": null
+      }
+    }
+  ],
+  "summary": {
+    "overflowIssues": 0,
+    "touchIssues": 232,
+    "fontIssues": 209,
+    "imgIssues": 0,
+    "gridFlags": 2,
+    "stickyFlags": 1
+  }
+}

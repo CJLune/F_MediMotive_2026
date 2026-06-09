@@ -1,0 +1,165 @@
+{
+  "site": "https://medimotive.de",
+  "generatedAt": "2026-06-09T22:32:18.473Z",
+  "sitemapXml": "/sitemap.xml",
+  "pages": [
+    {
+      "route": "index.html",
+      "loc": "https://medimotive.de/",
+      "status": "live",
+      "priority": 1,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "services.html",
+      "loc": "https://medimotive.de/services",
+      "status": "live",
+      "priority": 0.9,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "case-studies.html",
+      "loc": "https://medimotive.de/case-studies",
+      "status": "live",
+      "priority": 0.9,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "case-coated-aluminum-parts.html",
+      "loc": "https://medimotive.de/case-coated-aluminum-parts",
+      "status": "live",
+      "priority": 0.85,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "case-production-ramp-up.html",
+      "loc": "https://medimotive.de/case-production-ramp-up",
+      "status": "live",
+      "priority": 0.85,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "about.html",
+      "loc": "https://medimotive.de/about",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "contact.html",
+      "loc": "https://medimotive.de/contact",
+      "status": "live",
+      "priority": 0.7,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "rapid-response-troubleshooting.html",
+      "loc": "https://medimotive.de/services/rapid-response-troubleshooting",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "supplier-quality-complaint-management.html",
+      "loc": "https://medimotive.de/services/supplier-quality-complaint-management",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "ramp-up-process-stability.html",
+      "loc": "https://medimotive.de/services/ramp-up-process-stability",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "early-phase-risk-control-design-for-quality.html",
+      "loc": "https://medimotive.de/services/early-phase-risk-control-design-for-quality",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "qms-audit-regulatory-support.html",
+      "loc": "https://medimotive.de/services/qms-audit-regulatory-support",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "knowledge-gap-transition-security.html",
+      "loc": "https://medimotive.de/services/knowledge-gap-transition-security",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "certificates.html",
+      "loc": "https://medimotive.de/certificates",
+      "status": "live",
+      "priority": 0.6,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "work-journey.html",
+      "loc": "https://medimotive.de/work-journey",
+      "status": "live",
+      "priority": 0.5,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "our-approach.html",
+      "loc": "https://medimotive.de/our-approach",
+      "status": "live",
+      "priority": 0.6,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "regions.html",
+      "loc": "https://medimotive.de/regions",
+      "status": "live",
+      "priority": 0.5,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    }
+  ],
+  "excluded": [
+    {
+      "route": "gallery.html",
+      "reason": "noindex"
+    },
+    {
+      "route": "imprint.html",
+      "reason": "draft"
+    },
+    {
+      "route": "privacy.html",
+      "reason": "draft"
+    },
+    {
+      "route": "terms.html",
+      "reason": "removed"
+    },
+    {
+      "route": "medimotive-all-in-one.example.html",
+      "reason": "disallowed"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+/*
+ * Contact page — Pattern D layout lock (approved 2026-05-27)
+ *
+ * CENTERED: .contact-hero__stack (eyebrow, H1, lead, email, social)
+ * LEFT: breadcrumb only
+ *
+ * Visual design lives in assets/styles.redesign.css (compiled to styles.css).
+ * See source-truth/08-contact-and-facts.md
+ */
+
+.contact-page .page-hero.contact-hero .contact-hero__content .breadcrumb {
+  text-align: left !important;
+  margin-inline: 0 !important;
+}
+
+.contact-page .contact-hero__ambient,
+.contact-page .contact-hero__ambient * {
+  pointer-events: none !important;
+}
+
+.contact-page .page-hero.contact-hero .contact-hero__content {
+  position: relative !important;
+  z-index: 2 !important;
+  isolation: isolate;
+  pointer-events: auto !important;
+}
+
+.contact-page .contact-hero__stack,
+.contact-page .contact-hero__stack .contact-hero__email,
+.contact-page .contact-hero__social-links {
+  pointer-events: auto;
+}

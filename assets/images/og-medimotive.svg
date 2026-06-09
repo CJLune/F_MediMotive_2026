@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="MediMotive practical manufacturing-quality evidence">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2e4a"/>
+      <stop offset="55%" stop-color="#243d5c"/>
+      <stop offset="100%" stop-color="#486966"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#027343"/>
+      <stop offset="100%" stop-color="#025a35"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#f0fdf4" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="0" y="0" width="10" height="630" fill="url(#accent)"/>
+  <rect x="0" y="598" width="1200" height="4" fill="#027343" fill-opacity="0.85"/>
+  <circle cx="1020" cy="120" r="220" fill="#027343" fill-opacity="0.12"/>
+  <circle cx="1080" cy="480" r="160" fill="#f0fdf4" fill-opacity="0.05"/>
+  <path d="M720 80 L1180 80 L1180 550 L860 550 Z" fill="#f8fafc" fill-opacity="0.04"/>
+  <path d="M780 140 L1120 140 L1040 520 L720 520 Z" fill="none" stroke="#f0fdf4" stroke-opacity="0.14" stroke-width="2"/>
+  <text x="72" y="248" fill="#f0fdf4" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="700" letter-spacing="-1">MediMotive</text>
+  <text x="72" y="318" fill="#f0fdf4" fill-opacity="0.92" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="400">Practical manufacturing-quality evidence</text>
+  <text x="72" y="378" fill="#f0fdf4" fill-opacity="0.72" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="400">Shop-floor quality / supplier escalation / QMS / transition security</text>
+  <text x="72" y="560" fill="#f0fdf4" fill-opacity="0.55" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400">medimotive.de</text>
+</svg>

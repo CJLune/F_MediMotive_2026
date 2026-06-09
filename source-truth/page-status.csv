@@ -1,0 +1,22 @@
+route,status,role,hierarchy_tier,nav_location,notes
+index.html,live,Homepage,primary,wordmark,Credibility summary and routing page
+services.html,live,Expertise overview,primary,header,Capability overview; parent of six expertise detail pages
+case-studies.html,live,Proof page,primary,header,Case studies hub — links to individual case pages
+case-coated-aluminum-parts.html,live,Case study detail,proof-child,body,Case 01 recall reversal
+case-production-ramp-up.html,live,Case study detail,proof-child,body,Case 02 ramp-up stability
+about.html,live,About page,primary,header,MediMotive-first and Björn-supported
+contact.html,live,Contact page,primary,header,Direct professional contact; no form
+rapid-response-troubleshooting.html,live,Expertise detail,expertise-child,footer/services,Linked from services.html overview
+supplier-quality-complaint-management.html,live,Expertise detail,expertise-child,footer/services,Linked from services.html overview
+ramp-up-process-stability.html,live,Expertise detail,expertise-child,footer/services,Linked from services.html overview
+early-phase-risk-control-design-for-quality.html,live,Expertise detail,expertise-child,footer/services,Linked from services.html overview
+qms-audit-regulatory-support.html,live,Expertise detail,expertise-child,footer/services,Linked from services.html overview
+knowledge-gap-transition-security.html,live,Expertise detail,expertise-child,footer/services,Linked from services.html overview
+certificates.html,live,Certificate archive,proof,about/footer,Full credential archive; not in header
+work-journey.html,live,Work journey gallery,proof,about/footer,Primary visual proof entry from About and footer
+our-approach.html,live,Our Approach page,supporting,footer/body,Problem→solution framing per 11-our-approach-page.md; legacy method-reveal copy may remain until rewrite
+gallery.html,live,Visual proof hub,supporting,footer only,Optional hub; primary visual proof is work-journey.html
+regions.html,live,Regional context,supporting,footer only,Regional context; not in header
+imprint.html,draft,Legal,legal,footer,Review draft — counsel approval then publish-legal.mjs
+privacy.html,draft,Legal,legal,footer,Review draft — GDPR approval then publish-legal.mjs
+terms.html,removed,Legal,legal,—,Footer link removed until terms are ready

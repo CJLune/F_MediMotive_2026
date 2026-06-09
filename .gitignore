@@ -1,0 +1,22 @@
+.vercel
+node_modules/
+.DS_Store
+*.log
+
+# Google Search Console — copy from google-site-verification.config.example.json
+google-site-verification.config.json
+
+# Not for GitHub (too large / local-only)
+.playwright-browsers/
+archive/
+.cursor/
+
+# Raw and unused image assets
+assets/images/Björn_Seiler/
+assets/images/Audit/
+assets/images/archive/
+assets/images/Journey/
+
+# GitHub rejects files over 100 MB
+*.mp4
+*.mov

@@ -1,0 +1,2705 @@
+/* Our Approach page — editorial evidence-map upgrade */
+/* Scoped to .our-approach-page only. Do not move to global CSS. */
+
+.our-approach-page {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(72, 105, 102, 0.10), transparent 34rem),
+    radial-gradient(circle at 88% 18%, rgba(2, 115, 67, 0.07), transparent 30rem),
+    #f8fafc;
+}
+
+.our-approach-page .container:not(.nav) {
+  width: min(100% - 48px, 1240px) !important;
+  max-width: min(100% - 48px, 1240px) !important;
+}
+
+/* --- Editorial split hero (fluid mesh + hex constellation) --- */
+.our-approach-page .page-hero--approach-editorial {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(48px, 5vw, 72px) 0 clamp(40px, 4vw, 56px);
+  background: transparent;
+  border-bottom: none;
+}
+
+.our-approach-page .page-hero--approach-editorial::before {
+  display: none;
+}
+
+.our-approach-page .page-hero--approach-editorial::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 56px;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, #f8fafc);
+}
+
+.our-approach-page .approach-hero__ambient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.our-approach-page .approach-hero__ambient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    rgba(248, 250, 252, 0.38) 0%,
+    rgba(248, 250, 252, 0.14) 50%,
+    transparent 72%
+  );
+}
+
+.our-approach-page .approach-hero__mesh-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.62;
+  pointer-events: none;
+}
+
+.our-approach-page .approach-hero__noise {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.our-approach-page .page-hero--approach-editorial .container {
+  position: relative;
+  z-index: 2;
+}
+
+.our-approach-page .approach-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: clamp(40px, 6vw, 64px);
+  align-items: center;
+}
+
+.our-approach-page .approach-hero__copy {
+  min-width: 0;
+  text-align: left;
+}
+
+.our-approach-page .approach-hero__copy .breadcrumb {
+  margin: 0 0 12px;
+  padding: 0;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.our-approach-page .approach-hero__copy-panel {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(24px, 3vw, 32px);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  box-shadow: none;
+}
+
+.our-approach-page .approach-hero__copy-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 3px;
+  border-radius: 16px 16px 0 0;
+  background: linear-gradient(90deg, #027343, #486966);
+  pointer-events: none;
+}
+
+.our-approach-page .approach-hero__copy-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 92% 8%, rgba(72, 105, 102, 0.07) 0%, transparent 42%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, transparent 48%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, transparent 48%);
+}
+
+.our-approach-page .approach-hero__copy-intro,
+.our-approach-page .approach-hero__actions {
+  position: relative;
+  z-index: 1;
+}
+
+.our-approach-page .approach-hero__copy-intro .eyebrow {
+  margin: 0 0 10px;
+  font-size: var(--text-sm);
+  line-height: var(--lh-base);
+  letter-spacing: var(--ls-badge);
+}
+
+.our-approach-page .approach-hero__copy-intro h1 {
+  max-width: 22ch;
+  margin: 0;
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.024em;
+  color: var(--brand-dark);
+}
+
+.our-approach-page .approach-hero__copy-intro .lead {
+  max-width: 54ch;
+  margin: 18px 0 0;
+  line-height: var(--lh-loose);
+  color: var(--text-secondary);
+}
+
+.our-approach-page .approach-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin-top: 22px;
+  padding-top: 4px;
+}
+
+.our-approach-page .approach-hero__actions .btn-tertiary,
+.our-approach-page .approach-hero__path-link {
+  justify-content: flex-start;
+}
+
+.our-approach-page .approach-hero__proof-line {
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(72, 105, 102, 0.14);
+  max-width: 48ch;
+  font-size: var(--text-base-sm);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: var(--lh-base);
+  color: #486966;
+}
+
+.our-approach-page .approach-hero__media {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  align-self: center;
+  width: 100%;
+}
+
+@media (min-width: 921px) {
+  .our-approach-page .approach-hero__grid {
+    gap: clamp(52px, 7.5vw, 84px);
+  }
+
+  .our-approach-page .approach-hero__media {
+    align-items: flex-end;
+    padding-inline-start: clamp(28px, 3.5vw, 52px);
+    box-sizing: border-box;
+  }
+}
+
+.our-approach-page .approach-hero__instrument {
+  position: relative;
+  width: min(100%, 560px);
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  opacity: 0;
+  transform: translate3d(var(--instr-px, 0px), var(--instr-py, 0px), 0);
+  transition: opacity 0.55s ease;
+  will-change: transform;
+  overflow: visible;
+}
+
+html:not(.js) .our-approach-page .approach-hero__instrument {
+  opacity: 1;
+}
+
+html:not(.js) .our-approach-page .approach-hero__oct {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+html:not(.js) .our-approach-page .approach-hero__map-ring-seg,
+html:not(.js) .our-approach-page .approach-hero__map-spoke {
+  stroke-dashoffset: 0;
+}
+
+.our-approach-page .approach-hero__instrument.is-active {
+  opacity: 1;
+}
+
+.our-approach-page .approach-hero__instrument-grid {
+  display: none;
+}
+
+.our-approach-page .approach-hero__instrument-label {
+  margin: 10px 0 0;
+  padding-top: 0;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: var(--ls-eyebrow);
+  line-height: var(--lh-snug);
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(72, 105, 102, 0.78);
+}
+
+.our-approach-page .approach-hero__constellation {
+  position: relative;
+  width: min(100%, 520px);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  overflow: visible;
+}
+
+.our-approach-page .approach-hero__map-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  transition: opacity 0.65s ease;
+}
+
+.our-approach-page .page-hero--approach-editorial.approach-hero--map-inview .approach-hero__map-lines {
+  opacity: 0.32;
+}
+
+.our-approach-page .approach-hero__map-grid-trace {
+  position: absolute;
+  z-index: 0;
+  display: none;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.our-approach-page .approach-hero__map-grid-ring-seg {
+  stroke: rgba(72, 105, 102, 0.22);
+  stroke-width: 1;
+  stroke-dasharray: 4 6;
+  stroke-dashoffset: var(--grid-ring-offset, 0);
+  vector-effect: non-scaling-stroke;
+  fill: none;
+  transition: stroke 0.2s ease, stroke-opacity 0.2s ease;
+}
+
+.our-approach-page .approach-hero__map-grid-spoke {
+  stroke: rgba(72, 105, 102, 0.38);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 6;
+  stroke-dashoffset: var(--grid-spoke-offset, 0);
+  vector-effect: non-scaling-stroke;
+  fill: none;
+  transition: stroke 0.2s ease, stroke-opacity 0.2s ease, stroke-width 0.2s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-active .approach-hero__map-grid-ring-seg {
+  animation: approach-ring-draw 0.85s ease forwards;
+  animation-delay: calc(0.82s + (var(--ring-i, 0) * 0.05s));
+}
+
+.our-approach-page .approach-hero__instrument.is-active .approach-hero__map-grid-spoke {
+  animation: approach-spoke-draw 1.2s ease forwards;
+  animation-delay: calc(0.28s + (var(--spoke-i, 0) * 0.06s));
+}
+
+.our-approach-page .approach-hero__map-grid-hub .approach-hero__map-hub-label {
+  font-size: 5px;
+}
+
+.our-approach-page .approach-hero__instrument.is-active .approach-hero__map-grid-hub .approach-hero__map-hub-ring {
+  animation: approach-hub-ring-pulse 4s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.our-approach-page .approach-hero__map-ring-seg {
+  stroke: rgba(72, 105, 102, 0.2);
+  stroke-width: 1;
+  stroke-dasharray: 4 6;
+  stroke-dashoffset: 180;
+  fill: none;
+  transition: stroke 0.2s ease, stroke-opacity 0.2s ease;
+}
+
+.our-approach-page .approach-hero__map-ring-seg--12 { --ring-i: 0; }
+.our-approach-page .approach-hero__map-ring-seg--23 { --ring-i: 1; }
+.our-approach-page .approach-hero__map-ring-seg--34 { --ring-i: 2; }
+.our-approach-page .approach-hero__map-ring-seg--45 { --ring-i: 3; }
+.our-approach-page .approach-hero__map-ring-seg--56 { --ring-i: 4; }
+.our-approach-page .approach-hero__map-ring-seg--61 { --ring-i: 5; }
+
+.our-approach-page .approach-hero__instrument.is-active .approach-hero__map-ring-seg {
+  animation: approach-ring-draw 0.85s ease forwards;
+  animation-delay: calc(0.82s + (var(--ring-i, 0) * 0.05s));
+}
+
+.our-approach-page .approach-hero__map-spoke {
+  stroke: rgba(72, 105, 102, 0.38);
+  stroke-width: 1.5;
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+  transition: stroke 0.2s ease, stroke-opacity 0.2s ease, stroke-width 0.2s ease;
+}
+
+.our-approach-page .approach-hero__map-spoke--1 { --spoke-i: 0; }
+.our-approach-page .approach-hero__map-spoke--2 { --spoke-i: 1; }
+.our-approach-page .approach-hero__map-spoke--3 { --spoke-i: 2; }
+.our-approach-page .approach-hero__map-spoke--4 { --spoke-i: 3; }
+.our-approach-page .approach-hero__map-spoke--5 { --spoke-i: 4; }
+.our-approach-page .approach-hero__map-spoke--6 { --spoke-i: 5; }
+
+.our-approach-page .approach-hero__instrument.is-active .approach-hero__map-spoke {
+  animation: approach-spoke-draw 1.2s ease forwards;
+  animation-delay: calc(0.28s + (var(--spoke-i, 0) * 0.06s));
+}
+
+.our-approach-page .approach-hero__map-hub-halo {
+  fill: rgba(2, 115, 67, 0.08);
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: opacity 0.6s ease, fill 0.6s ease;
+}
+
+.our-approach-page .approach-hero__map-hub-ring {
+  fill: none;
+  stroke: rgba(72, 105, 102, 0.38);
+  stroke-width: 1.25;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.our-approach-page .approach-hero__map-hub-core {
+  fill: rgba(72, 105, 102, 0.55);
+}
+
+.our-approach-page .approach-hero__map-hub-label {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: var(--ls-badge);
+  fill: rgba(72, 105, 102, 0.82);
+  pointer-events: none;
+}
+
+.our-approach-page .approach-hero__map-hub-caption {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 4.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  fill: rgba(72, 105, 102, 0.62);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease, fill 0.5s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-active:not(.is-story-loop) .approach-hero__map-hub-ring {
+  animation: approach-hub-ring-pulse 4s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.our-approach-page .approach-hero__oct-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: visible;
+}
+
+.our-approach-page .approach-hero__oct {
+  --oct-size: 140px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: var(--oct-size);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  overflow: visible;
+}
+
+.our-approach-page .approach-hero__instrument.is-active .approach-hero__oct {
+  animation: approach-oct-enter 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(0.08s * var(--oct-i, 1));
+}
+
+.our-approach-page .approach-hero__oct:focus {
+  outline: none;
+}
+
+.our-approach-page .approach-hero__oct--anchor {
+  --oct-size: 156px;
+}
+
+.our-approach-page .approach-hero__oct--purchasing { left: 50%; top: 15%; }
+.our-approach-page .approach-hero__oct--supplier { left: 82%; top: 26%; }
+.our-approach-page .approach-hero__oct--engineering { left: 82%; top: 74%; }
+.our-approach-page .approach-hero__oct--production { left: 50%; top: 83%; }
+.our-approach-page .approach-hero__oct--quality { left: 18%; top: 74%; }
+.our-approach-page .approach-hero__oct--management { left: 18%; top: 26%; }
+
+.our-approach-page .approach-hero__oct-figure {
+  position: relative;
+  width: var(--oct-size);
+  height: var(--oct-size);
+  margin: 0;
+  overflow: hidden;
+  clip-path: polygon(
+    30% 0%, 70% 0%, 100% 30%, 100% 70%,
+    70% 100%, 30% 100%, 0% 70%, 0% 30%
+  );
+  background: #fff;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 4px 14px rgba(28, 46, 74, 0.1);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-active:not(.is-idle-paused):not(.is-tab-hidden):not(.is-story-loop) .approach-hero__oct-figure {
+  animation: approach-oct-breathe 8s ease-in-out infinite;
+  animation-delay: calc(1.2s + (var(--oct-i, 1) * 0.35s));
+}
+
+.our-approach-page .approach-hero__oct-figure::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(72, 105, 102, 0.14);
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+
+.our-approach-page .approach-hero__oct:hover .approach-hero__oct-figure::after,
+.our-approach-page .approach-hero__oct:focus-visible .approach-hero__oct-figure::after {
+  opacity: 0;
+}
+
+.our-approach-page .approach-hero__oct--anchor .approach-hero__oct-figure {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px rgba(2, 115, 67, 0.35),
+    0 6px 18px rgba(28, 46, 74, 0.12);
+}
+
+.our-approach-page .approach-hero__instrument.is-active:not(.is-idle-paused):not(.is-tab-hidden):not(.is-story-loop) .approach-hero__oct--anchor .approach-hero__oct-figure {
+  animation: approach-anchor-ring 4s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.our-approach-page .approach-hero__oct:focus-visible .approach-hero__oct-figure {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px rgba(2, 115, 67, 0.65),
+    0 6px 18px rgba(28, 46, 74, 0.12);
+}
+
+.our-approach-page .approach-hero__oct-figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.our-approach-page .approach-hero__oct:hover .approach-hero__oct-figure img,
+.our-approach-page .approach-hero__oct:focus-visible .approach-hero__oct-figure img {
+  transform: scale(1.03);
+}
+
+.our-approach-page .approach-hero__oct-label {
+  max-width: none;
+  width: max-content;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: var(--ls-badge);
+  line-height: var(--lh-heading);
+  text-align: center;
+  text-transform: uppercase;
+  color: #3d5856;
+}
+
+.our-approach-page .approach-hero__oct-hint {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  z-index: 4;
+  display: inline-block;
+  width: max-content;
+  max-width: none;
+  min-width: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: var(--ls-badge);
+  line-height: var(--lh-heading);
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #3d5856;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(72, 105, 102, 0.12);
+  box-shadow: 0 3px 10px rgba(28, 46, 74, 0.12);
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translate(-50%, 4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+}
+
+.our-approach-page .approach-hero__oct:hover .approach-hero__oct-hint,
+.our-approach-page .approach-hero__oct:focus-visible .approach-hero__oct-hint {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.our-approach-page .approach-hero__oct--engineering .approach-hero__oct-hint,
+.our-approach-page .approach-hero__oct--production .approach-hero__oct-hint,
+.our-approach-page .approach-hero__oct--quality .approach-hero__oct-hint {
+  top: auto;
+  bottom: calc(100% + 6px);
+  transform: translate(-50%, -4px);
+}
+
+.our-approach-page .approach-hero__oct--engineering:hover .approach-hero__oct-hint,
+.our-approach-page .approach-hero__oct--engineering:focus-visible .approach-hero__oct-hint,
+.our-approach-page .approach-hero__oct--production:hover .approach-hero__oct-hint,
+.our-approach-page .approach-hero__oct--production:focus-visible .approach-hero__oct-hint,
+.our-approach-page .approach-hero__oct--quality:hover .approach-hero__oct-hint,
+.our-approach-page .approach-hero__oct--quality:focus-visible .approach-hero__oct-hint {
+  transform: translate(-50%, 0);
+}
+
+@media (hover: none), (max-width: 640px) {
+  .our-approach-page .approach-hero__oct-hint {
+    display: none;
+  }
+}
+
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct:is(:hover, :focus-visible)) .approach-hero__oct:not(:is(:hover, :focus-visible)) {
+  opacity: 0.55;
+}
+
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct:is(:hover, :focus-visible)) .approach-hero__oct:not(:is(:hover, :focus-visible)) .approach-hero__oct-figure img {
+  filter: saturate(0.68);
+}
+
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="1"]:is(:hover, :focus-visible)) .approach-hero__map-spoke--1,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="2"]:is(:hover, :focus-visible)) .approach-hero__map-spoke--2,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="3"]:is(:hover, :focus-visible)) .approach-hero__map-spoke--3,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="4"]:is(:hover, :focus-visible)) .approach-hero__map-spoke--4,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="5"]:is(:hover, :focus-visible)) .approach-hero__map-spoke--5,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="6"]:is(:hover, :focus-visible)) .approach-hero__map-spoke--6 {
+  stroke: rgba(72, 105, 102, 0.95);
+  stroke-width: 2;
+  stroke-opacity: 1;
+}
+
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="1"]:is(:hover, :focus-visible)) .approach-hero__map-spoke:not(.approach-hero__map-spoke--1),
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="2"]:is(:hover, :focus-visible)) .approach-hero__map-spoke:not(.approach-hero__map-spoke--2),
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="3"]:is(:hover, :focus-visible)) .approach-hero__map-spoke:not(.approach-hero__map-spoke--3),
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="4"]:is(:hover, :focus-visible)) .approach-hero__map-spoke:not(.approach-hero__map-spoke--4),
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="5"]:is(:hover, :focus-visible)) .approach-hero__map-spoke:not(.approach-hero__map-spoke--5),
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="6"]:is(:hover, :focus-visible)) .approach-hero__map-spoke:not(.approach-hero__map-spoke--6) {
+  stroke-opacity: 0.18;
+}
+
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="1"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--61,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="1"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--12,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="2"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--12,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="2"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--23,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="3"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--23,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="3"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--34,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="4"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--34,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="4"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--45,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="5"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--45,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="5"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--56,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="6"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--56,
+.our-approach-page .approach-hero__constellation:has(.approach-hero__oct[data-seat="6"]:is(:hover, :focus-visible)) .approach-hero__map-ring-seg--61 {
+  stroke: rgba(72, 105, 102, 0.55);
+  stroke-opacity: 1;
+}
+
+/* Interface convergence story loop (~40s) */
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__oct {
+  opacity: 0.48;
+  transition: opacity 0.45s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__oct.is-story-node-seen {
+  opacity: 0.72;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__oct.is-story-node-active {
+  opacity: 1;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__oct.is-story-node-seen:not(.is-story-node-active) .approach-hero__oct-figure {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 3px rgba(2, 115, 67, 0.28),
+    0 5px 14px rgba(28, 46, 74, 0.1);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__oct.is-story-node-active .approach-hero__oct-figure {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px rgba(2, 115, 67, 0.5),
+    0 8px 20px rgba(28, 46, 74, 0.14);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__oct.is-story-node-active .approach-hero__oct-figure::after {
+  opacity: 0;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__map-spoke {
+  stroke-opacity: 0.2;
+  transition: stroke 0.45s ease, stroke-opacity 0.45s ease, stroke-width 0.45s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__map-spoke.is-story-spoke-active {
+  stroke: rgba(72, 105, 102, 0.95);
+  stroke-opacity: 1;
+  stroke-width: 2;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-2 .approach-hero__oct {
+  opacity: 0.72;
+  transition: opacity 0.35s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-2 .approach-hero__map-ring-seg {
+  stroke-opacity: 0.18;
+  transition: stroke 0.4s ease, stroke-opacity 0.4s ease, stroke-width 0.4s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-2 .approach-hero__map-ring-seg.is-story-ring-active {
+  stroke: rgba(72, 105, 102, 0.58);
+  stroke-opacity: 1;
+  stroke-width: 1.5;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-2 .approach-hero__map-ring-seg.is-story-ring-current {
+  stroke: rgba(72, 105, 102, 0.88);
+  stroke-opacity: 1;
+  stroke-width: 1.85;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-2 .approach-hero__map-spoke {
+  stroke-opacity: 0.28;
+}
+
+/* Phase 3a — spokes converge inward; ring softens */
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3a .approach-hero__oct {
+  opacity: 0.82;
+  transition: opacity 0.5s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3a .approach-hero__oct--anchor .approach-hero__oct-figure {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px rgba(2, 115, 67, 0.32),
+    0 6px 18px rgba(28, 46, 74, 0.1);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3a .approach-hero__map-ring-seg.is-story-ring-lit {
+  stroke-opacity: 0.12;
+  transition: stroke-opacity 0.5s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3a .approach-hero__map-spoke {
+  stroke-opacity: 0.14;
+  transition: stroke 0.45s ease, stroke-opacity 0.45s ease, stroke-width 0.45s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3a .approach-hero__map-spoke.is-story-spoke-converged {
+  stroke: rgba(72, 105, 102, 0.62);
+  stroke-opacity: 1;
+  stroke-width: 1.5;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3a .approach-hero__map-spoke.is-story-spoke-converging {
+  stroke: rgba(2, 115, 67, 0.88);
+  stroke-opacity: 1;
+  stroke-width: 2.25;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3a .approach-hero__map-hub-halo {
+  opacity: 0.35;
+  fill: rgba(2, 115, 67, 0.12);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3a .approach-hero__map-hub-ring {
+  stroke: rgba(72, 105, 102, 0.45);
+  stroke-opacity: 0.55;
+}
+
+/* Phase 3b — hub peak; production does not outshine center */
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__oct,
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__oct {
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__oct--anchor .approach-hero__oct-figure,
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__oct--anchor .approach-hero__oct-figure {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px rgba(2, 115, 67, 0.35),
+    0 6px 18px rgba(28, 46, 74, 0.12);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__map-spoke.is-story-spoke-lit {
+  stroke: rgba(2, 115, 67, 0.82);
+  stroke-opacity: 1;
+  stroke-width: 2;
+  transition: stroke 0.6s ease, stroke-opacity 0.6s ease, stroke-width 0.6s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__map-ring-seg.is-story-ring-lit {
+  stroke: rgba(72, 105, 102, 0.28);
+  stroke-opacity: 0.35;
+  transition: stroke-opacity 0.6s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__map-hub {
+  filter: url(#approach-hub-glow);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__map-hub-halo {
+  opacity: 1;
+  fill: rgba(2, 115, 67, 0.22);
+  animation: approach-story-hub-halo 2.4s ease forwards;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__map-hub-ring {
+  animation: approach-story-hub-glow 2.4s ease forwards;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__map-hub-core {
+  fill: rgba(2, 115, 67, 0.78);
+  transition: fill 0.8s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__map-hub-label {
+  fill: rgba(2, 115, 67, 0.98);
+  font-size: 7.5px;
+  transition: fill 0.8s ease;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-3b .approach-hero__map-hub-caption {
+  opacity: 1;
+  fill: rgba(2, 115, 67, 0.88);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__map-spoke.is-story-spoke-lit {
+  stroke: rgba(72, 105, 102, 0.58);
+  stroke-opacity: 1;
+  stroke-width: 1.5;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__map-ring-seg.is-story-ring-lit {
+  stroke: rgba(72, 105, 102, 0.34);
+  stroke-opacity: 1;
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__map-hub-halo {
+  opacity: 0.72;
+  fill: rgba(2, 115, 67, 0.16);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__map-hub-ring {
+  stroke: rgba(2, 115, 67, 0.62);
+  stroke-opacity: 0.88;
+  transform: scale(1.06);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__map-hub-core {
+  fill: rgba(2, 115, 67, 0.58);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__map-hub-label {
+  fill: rgba(2, 115, 67, 0.88);
+}
+
+.our-approach-page .approach-hero__instrument.is-story-loop.story-phase-4 .approach-hero__map-hub-caption {
+  opacity: 0.85;
+  fill: rgba(2, 115, 67, 0.72);
+}
+
+@keyframes approach-story-hub-glow {
+  0% {
+    stroke: rgba(72, 105, 102, 0.38);
+    stroke-opacity: 0.38;
+    transform: scale(1);
+  }
+
+  100% {
+    stroke: rgba(2, 115, 67, 0.85);
+    stroke-opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes approach-story-hub-halo {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.92);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes approach-oct-enter {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes approach-oct-breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.008);
+  }
+}
+
+@keyframes approach-ring-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes approach-spoke-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes approach-hub-ring-pulse {
+  0%, 100% {
+    stroke-opacity: 0.38;
+    transform: scale(1);
+  }
+
+  50% {
+    stroke-opacity: 0.72;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes approach-oct-enter-grid {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes approach-anchor-ring {
+  0%, 100% {
+    box-shadow:
+      0 0 0 2px #fff,
+      0 0 0 4px rgba(2, 115, 67, 0.28),
+      0 6px 18px rgba(28, 46, 74, 0.12);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 2px #fff,
+      0 0 0 4px rgba(2, 115, 67, 0.55),
+      0 6px 18px rgba(28, 46, 74, 0.12);
+  }
+}
+
+/* First problem section */
+.our-approach-page .page-hero--approach-editorial + .section {
+  padding-top: clamp(12px, 2vw, 20px);
+}
+
+.our-approach-page .approach-path-intro.section-head--left {
+  margin-inline: 0;
+  margin-top: clamp(4px, 1vw, 8px);
+  margin-bottom: clamp(24px, 3vw, 28px);
+  padding-bottom: 14px;
+  max-width: 44rem;
+}
+
+.our-approach-page .approach-path-intro .home-section-label {
+  margin: 0 0 10px;
+}
+
+.our-approach-page .approach-path-intro h2 {
+  max-width: 22ch;
+  letter-spacing: var(--ls-h1);
+}
+
+.our-approach-page .approach-path-intro p {
+  max-width: 52ch;
+  line-height: var(--lh-base);
+}
+
+.our-approach-page #failure-path-map {
+  scroll-margin-top: 88px;
+}
+
+.our-approach-page #failure-path-map .container {
+  min-width: 0;
+}
+
+.our-approach-page .page-hero--approach-editorial + .section .approach-diagnostic-map {
+  margin: 0 0 clamp(24px, 3vw, 32px);
+  max-width: 100%;
+}
+
+.our-approach-page .approach-diagnostic-map__head--compact {
+  margin-bottom: clamp(16px, 2.5vw, 22px);
+}
+
+.our-approach-page .approach-diagnostic-map__head--compact p {
+  display: none;
+}
+
+/* Three themes: from generic cards to industrial problem layers */
+.our-approach-page .page-hero--approach-editorial + .section .grid.grid-3 {
+  gap: clamp(18px, 2.4vw, 28px);
+  margin-top: clamp(32px, 5vw, 64px);
+  counter-reset: approach-layer;
+}
+
+.our-approach-page .page-hero--approach-editorial + .section .grid.grid-3 .card {
+  counter-increment: approach-layer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  border: 1px solid rgba(28, 46, 74, 0.14);
+  border-top: 3px solid rgba(2, 115, 67, 0.62);
+  box-shadow: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.96));
+  padding: clamp(24px, 3vw, 34px);
+}
+
+.our-approach-page .page-hero--approach-editorial + .section .grid.grid-3 .card::before {
+  content: "0" counter(approach-layer);
+  display: block;
+  margin-bottom: clamp(24px, 3vw, 36px);
+  font-family: Montserrat, sans-serif;
+  font-size: var(--text-sm);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #027343;
+}
+
+.our-approach-page .page-hero--approach-editorial + .section .grid.grid-3 .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(2, 115, 67, 0.65), transparent 68%);
+}
+
+.our-approach-page .page-hero--approach-editorial + .section .grid.grid-3 .card h3 {
+  max-width: 16ch;
+  margin-bottom: 14px;
+  font-size: clamp(1.2rem, 1.6vw, 1.55rem);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-heading);
+}
+
+.our-approach-page .page-hero--approach-editorial + .section .grid.grid-3 .card p {
+  color: rgba(28, 46, 74, 0.72);
+  line-height: var(--lh-loose);
+}
+
+/* Replace dead canvas feel with CSS-only industrial ambient bands */
+.our-approach-page .organic-method-interfaces,
+.our-approach-page .organic-method-close {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(28, 46, 74, 0.10);
+  border-bottom: 1px solid rgba(28, 46, 74, 0.10);
+}
+
+.our-approach-page .organic-method-interfaces {
+  background:
+    radial-gradient(circle at 16% 10%, rgba(2, 115, 67, 0.10), transparent 30rem),
+    linear-gradient(135deg, rgba(240, 253, 244, 0.94), rgba(248, 250, 252, 0.98));
+}
+
+.our-approach-page .organic-method-close {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(72, 105, 102, 0.18), transparent 30rem),
+    linear-gradient(135deg, #1c2e4a, #263c57);
+}
+
+.our-approach-page .organic-method-interfaces__geo-canvas,
+.our-approach-page .organic-method-close__geo-canvas {
+  display: none;
+}
+
+.our-approach-page .organic-method-interfaces__noise,
+.our-approach-page .organic-method-close__noise {
+  opacity: 0.16;
+}
+
+/* Proof cards: less glass, more case-file */
+.our-approach-page .organic-method-case-grid {
+  gap: clamp(20px, 3vw, 32px);
+}
+
+.our-approach-page .organic-case-card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.our-approach-page .organic-case-card__body {
+  border-radius: 0;
+  border: 1px solid rgba(28, 46, 74, 0.14);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.our-approach-page .organic-case-card .pill {
+  border-radius: 999px;
+  border-color: rgba(2, 115, 67, 0.24);
+  background: rgba(240, 253, 244, 0.85);
+}
+
+.our-approach-page .organic-case-card h3 {
+  max-width: 18ch;
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 920px) {
+  .our-approach-page .organic-case-card h3 {
+    max-width: 100%;
+  }
+}
+
+.our-approach-page .organic-case-card p {
+  color: rgba(28, 46, 74, 0.72);
+  line-height: var(--lh-loose);
+}
+
+/* Closing panel: professional summary, not funnel block */
+.our-approach-page .organic-method-close .dark-panel {
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background:
+    linear-gradient(180deg, rgba(28, 46, 74, 0.92), rgba(28, 46, 74, 0.84));
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.our-approach-page .organic-method-close .dark-panel h2 {
+  max-width: 16ch;
+  letter-spacing: var(--ls-h1);
+}
+
+.our-approach-page .organic-method-close .dark-panel p {
+  max-width: 68ch;
+}
+
+/* Footer proof CTA */
+.our-approach-page .expertise-proof-cta {
+  border-top: 1px solid rgba(28, 46, 74, 0.10);
+}
+
+.our-approach-page .expertise-proof-cta .container.narrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-approach-page .expertise-proof-cta .section-head,
+.our-approach-page .expertise-proof-cta .section-head.center {
+  width: 100%;
+  max-width: 780px;
+  margin-inline: auto;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.our-approach-page .expertise-proof-cta .section-head h2 {
+  letter-spacing: var(--ls-h1);
+}
+
+.our-approach-page .expertise-proof-cta .section-head p {
+  max-width: 52ch;
+  margin-inline: auto;
+  line-height: var(--lh-base);
+}
+
+.our-approach-page .expertise-proof-cta .actions {
+  justify-content: center;
+  width: 100%;
+  max-width: 28rem;
+  margin-inline: auto;
+}
+
+/* Responsive rhythm */
+@media (prefers-reduced-motion: reduce) {
+  .our-approach-page .approach-hero__mesh-canvas {
+    display: none;
+  }
+
+  .our-approach-page .approach-hero__noise {
+    opacity: 0.03;
+  }
+
+  .our-approach-page .page-hero--approach-editorial {
+    background: #f8fafc;
+  }
+
+  .our-approach-page .approach-hero__oct {
+    opacity: 1;
+    animation: none;
+    transform: translate(-50%, -50%);
+  }
+
+  .our-approach-page .approach-hero__instrument {
+    opacity: 1;
+    transform: none;
+  }
+
+  .our-approach-page .approach-hero__instrument.is-active .approach-hero__oct {
+    animation: none;
+    opacity: 1;
+  }
+
+  .our-approach-page .approach-hero__instrument.is-active .approach-hero__map-ring-seg,
+  .our-approach-page .approach-hero__instrument.is-active .approach-hero__map-spoke {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+
+  .our-approach-page .approach-hero__instrument.is-active .approach-hero__map-grid-ring-seg,
+  .our-approach-page .approach-hero__instrument.is-active .approach-hero__map-grid-spoke {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+
+  .our-approach-page .approach-hero__oct--anchor .approach-hero__oct-figure {
+    animation: none;
+  }
+
+  .our-approach-page .approach-hero__oct-figure {
+    animation: none;
+  }
+
+  .our-approach-page .approach-hero__instrument.is-active .approach-hero__map-hub-ring {
+    animation: none;
+  }
+}
+
+@media (max-width: 920px) {
+  .our-approach-page .container:not(.nav),
+  .our-approach-page .page-hero--approach-editorial .container {
+    width: min(100% - 24px, 1240px) !important;
+    max-width: min(100% - 24px, 1240px) !important;
+  }
+
+  .our-approach-page .page-hero--approach-editorial {
+    padding: 48px 0 36px;
+  }
+
+  .our-approach-page .approach-hero__mesh-canvas {
+    opacity: 0.52;
+  }
+
+  .our-approach-page .approach-hero__ambient::after {
+    background: transparent;
+  }
+
+  .our-approach-page .approach-hero__grid {
+    grid-template-columns: 1fr;
+    gap: clamp(40px, 7vw, 56px);
+  }
+
+  .our-approach-page .approach-hero__copy {
+    margin-bottom: 0;
+  }
+
+  .our-approach-page .approach-hero__media {
+    align-items: center;
+    padding-inline-start: 0;
+    margin-top: 0;
+    padding-top: clamp(16px, 3vw, 24px);
+    border-top: 1px solid rgba(72, 105, 102, 0.12);
+  }
+
+  .our-approach-page .approach-hero__copy-panel {
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
+  }
+
+  .our-approach-page .approach-hero__copy-intro .lead {
+    margin-top: 16px;
+  }
+
+  .our-approach-page .approach-hero__proof-line {
+    margin-top: 14px;
+    padding-top: 12px;
+    font-size: var(--text-base-sm);
+  }
+
+  .our-approach-page .approach-hero__actions {
+    margin-top: 20px;
+  }
+
+  .our-approach-page .approach-hero__copy-intro h1 {
+    max-width: none;
+    font-size: clamp(1.85rem, 5vw, 2.25rem);
+  }
+
+  .our-approach-page .page-hero--approach-editorial + .section .grid.grid-3 .card h3 {
+    max-width: 100%;
+  }
+
+  .our-approach-page .approach-path-intro h2 {
+    max-width: 100%;
+  }
+
+  body.our-approach-page .expertise-proof-cta .container.narrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body.our-approach-page .expertise-proof-cta .section-head,
+  body.our-approach-page .expertise-proof-cta .section-head.center {
+    width: 100%;
+    max-width: 780px;
+    margin-inline: auto;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  body.our-approach-page .expertise-proof-cta .section-head p,
+  body.our-approach-page .expertise-proof-cta .section-head.center p {
+    max-width: 52ch;
+    margin-inline: auto;
+    text-align: center;
+    line-height: var(--lh-base);
+  }
+
+  body.our-approach-page .expertise-proof-cta .actions {
+    justify-content: center;
+    width: 100%;
+    max-width: 28rem;
+    margin-inline: auto;
+  }
+
+  body.our-approach-page .organic-method-interfaces .section-head {
+    max-width: 780px;
+    margin-inline: auto;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  body.our-approach-page .organic-method-interfaces .section-head h2 {
+    text-align: center;
+  }
+
+  body.our-approach-page .organic-method-interfaces .section-head p {
+    max-width: 52ch;
+    margin-inline: auto;
+    text-align: center;
+    line-height: var(--lh-base);
+  }
+}
+
+@media (max-width: 920px) {
+  .our-approach-page .approach-hero__instrument {
+    width: min(100%, 480px);
+    margin-inline: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .our-approach-page .approach-hero__instrument-grid {
+    display: none;
+  }
+
+  .our-approach-page .approach-hero__instrument-label {
+    margin-top: 12px;
+    color: #486966;
+  }
+
+  .our-approach-page .approach-hero__constellation {
+    width: min(100%, 420px);
+    aspect-ratio: 1;
+    margin-inline: auto;
+  }
+
+  /* Pull ring inward so top/bottom oct labels do not crowd the copy block above */
+  .our-approach-page .approach-hero__oct--purchasing {
+    top: 19%;
+  }
+
+  .our-approach-page .approach-hero__oct--supplier {
+    left: 80%;
+    top: 29%;
+  }
+
+  .our-approach-page .approach-hero__oct--management {
+    left: 20%;
+    top: 29%;
+  }
+
+  .our-approach-page .approach-hero__oct--engineering {
+    left: 80%;
+    top: 71%;
+  }
+
+  .our-approach-page .approach-hero__oct--production {
+    top: 81%;
+  }
+
+  .our-approach-page .approach-hero__oct--quality {
+    left: 20%;
+    top: 71%;
+  }
+
+  .our-approach-page .approach-hero__oct-grid {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+  }
+
+  .our-approach-page .approach-hero__oct {
+    position: absolute;
+    width: var(--oct-size);
+    max-width: none;
+    --oct-size: 108px;
+    transform: translate(-50%, -50%);
+  }
+
+  .our-approach-page .approach-hero__instrument.is-active .approach-hero__oct {
+    animation: approach-oct-enter 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(0.08s * var(--oct-i, 1));
+  }
+
+  .our-approach-page .approach-hero__oct--anchor {
+    --oct-size: 122px;
+  }
+
+  .our-approach-page .approach-hero__oct-figure {
+    width: var(--oct-size);
+    height: var(--oct-size);
+    max-width: none;
+    aspect-ratio: auto;
+    margin-inline: 0;
+  }
+
+  .our-approach-page .approach-hero__instrument.is-active:not(.is-idle-paused):not(.is-tab-hidden):not(.is-story-loop) .approach-hero__oct-figure {
+    animation: approach-oct-breathe 8s ease-in-out infinite;
+    animation-delay: calc(1.2s + (var(--oct-i, 1) * 0.35s));
+  }
+
+  .our-approach-page .approach-hero__instrument.is-active:not(.is-idle-paused):not(.is-tab-hidden):not(.is-story-loop) .approach-hero__oct--anchor .approach-hero__oct-figure {
+    animation: approach-anchor-ring 4s ease-in-out infinite;
+    animation-delay: 1.4s;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-approach-page .approach-hero__actions {
+    justify-content: stretch;
+  }
+
+  .our-approach-page .expertise-proof-cta .actions {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .our-approach-page .container:not(.nav),
+  .our-approach-page .page-hero--approach-editorial .container {
+    width: min(100% - 24px, 1240px) !important;
+    max-width: min(100% - 24px, 1240px) !important;
+  }
+
+  .our-approach-page .page-hero--approach-editorial {
+    padding: 40px 0 36px;
+  }
+
+  .our-approach-page .approach-hero__mesh-canvas {
+    opacity: 0.44;
+  }
+
+  .our-approach-page .approach-hero__grid {
+    gap: clamp(44px, 11vw, 56px);
+  }
+
+  .our-approach-page .approach-hero__media {
+    padding-top: 28px;
+    margin-top: 4px;
+  }
+
+  .our-approach-page .approach-hero__copy-panel {
+    padding: 20px 18px;
+    margin-bottom: 0;
+  }
+
+  .our-approach-page .approach-hero__copy-intro h1 {
+    font-size: clamp(1.75rem, 6.5vw, 2rem);
+    line-height: var(--lh-tight);
+  }
+
+  .our-approach-page .approach-hero__copy-intro .lead {
+    font-size: var(--text-md);
+    line-height: var(--lh-base);
+    margin-top: 14px;
+  }
+
+  .our-approach-page .approach-hero__proof-line {
+    margin-top: 12px;
+    padding-top: 12px;
+    font-size: var(--text-base-sm);
+    line-height: var(--lh-base);
+  }
+
+  .our-approach-page .approach-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .our-approach-page .approach-hero__actions .btn-primary,
+  .our-approach-page .approach-hero__actions .btn-tertiary {
+    width: 100%;
+    min-height: 44px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .our-approach-page .approach-hero__instrument {
+    width: min(100%, 360px);
+    margin-top: 8px;
+  }
+
+  .our-approach-page .approach-hero__constellation {
+    width: min(100%, 340px);
+    margin-inline: auto;
+  }
+
+  .our-approach-page .approach-hero__oct {
+    --oct-size: 84px;
+    gap: 6px;
+  }
+
+  .our-approach-page .approach-hero__oct--anchor {
+    --oct-size: 96px;
+  }
+
+  .our-approach-page .approach-hero__oct-label {
+    font-size: 0.625rem;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+  }
+
+  .our-approach-page .approach-hero__oct--purchasing {
+    top: 21%;
+  }
+
+  .our-approach-page .approach-hero__oct--supplier {
+    left: 79%;
+    top: 30%;
+  }
+
+  .our-approach-page .approach-hero__oct--management {
+    left: 21%;
+    top: 30%;
+  }
+
+  .our-approach-page .approach-hero__oct--engineering {
+    left: 79%;
+    top: 70%;
+  }
+
+  .our-approach-page .approach-hero__oct--production {
+    top: 79%;
+  }
+
+  .our-approach-page .approach-hero__oct--quality {
+    left: 21%;
+    top: 70%;
+  }
+
+  .our-approach-page .approach-hero__map-hub-caption {
+    display: none;
+  }
+
+  .our-approach-page .approach-hero__instrument-label {
+    font-size: var(--text-2xs);
+    margin-top: 16px;
+    padding-inline: 8px;
+  }
+
+  .our-approach-page .approach-path-intro {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+  }
+
+  .our-approach-page .page-hero--approach-editorial + .section .grid.grid-3 .card {
+    padding: 24px;
+  }
+
+  .our-approach-page .approach-action-panel__copy h2 {
+    max-width: 100%;
+  }
+
+  body.our-approach-page .expertise-proof-cta .container.narrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body.our-approach-page .expertise-proof-cta .section-head,
+  body.our-approach-page .expertise-proof-cta .section-head.center {
+    width: 100%;
+    max-width: 780px;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  body.our-approach-page .expertise-proof-cta .section-head h2 {
+    text-align: center;
+  }
+
+  body.our-approach-page .expertise-proof-cta .section-head p {
+    font-size: var(--text-base);
+    max-width: 52ch;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  body.our-approach-page .expertise-proof-cta .actions {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 28rem;
+    margin-inline: auto;
+    gap: 10px;
+  }
+
+  body.our-approach-page .expertise-proof-cta .actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-approach-page .container:not(.nav),
+  .our-approach-page .page-hero--approach-editorial .container {
+    width: min(100% - 16px, 1240px) !important;
+    max-width: min(100% - 16px, 1240px) !important;
+  }
+
+  .our-approach-page .approach-hero__grid {
+    gap: 48px;
+  }
+
+  .our-approach-page .approach-hero__media {
+    padding-top: 32px;
+  }
+}
+
+
+/* Our Approach — diagnostic trace (replaces interface-map visual) */
+
+.our-approach-page .approach-diagnostic-map {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid rgba(28, 46, 74, 0.1);
+  border-top: none;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(72, 105, 102, 0.08), transparent 16rem),
+    linear-gradient(180deg, #ffffff, #f8fafc);
+  padding: clamp(22px, 3vw, 32px);
+  box-shadow:
+    0 24px 48px rgba(28, 46, 74, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  overflow: hidden;
+}
+
+.our-approach-page .approach-diagnostic-map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 16px 16px 0 0;
+  background: linear-gradient(90deg, #027343, #486966);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.our-approach-page .approach-diagnostic-map::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(28, 46, 74, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 46, 74, 0.018) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.32), transparent 40%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.32), transparent 40%);
+}
+
+.our-approach-page .approach-diagnostic-map__head,
+.our-approach-page .approach-diagnostic-map__body,
+.our-approach-page .diagnostic-result {
+  position: relative;
+  z-index: 1;
+}
+
+.our-approach-page .approach-diagnostic-map__head {
+  max-width: 38rem;
+  margin-bottom: clamp(20px, 3vw, 28px);
+}
+
+.our-approach-page .approach-diagnostic-map__status {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 7px 14px;
+  border: 1px solid rgba(2, 115, 67, 0.28);
+  border-radius: 999px;
+  background: color-mix(in srgb, #f0fdf4 88%, #027343 12%);
+  color: #027343;
+  font-size: var(--text-sm);
+  font-weight: 800;
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+}
+
+.our-approach-page .approach-diagnostic-map__status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #027343;
+  box-shadow: 0 0 0 3px rgba(2, 115, 67, 0.18);
+  animation: diagnostic-status-pulse 3.5s ease-in-out infinite;
+}
+
+.our-approach-page .approach-diagnostic-map__head p {
+  margin: 0;
+  color: rgba(28, 46, 74, 0.72);
+  line-height: var(--lh-loose);
+}
+
+.our-approach-page .approach-diagnostic-map__body {
+  position: relative;
+  min-width: 0;
+  --diagnostic-map-gap: clamp(16px, 2.4vw, 28px);
+  --diagnostic-rail-x: 18px;
+  --diagnostic-trace-col: minmax(148px, 176px);
+}
+
+.our-approach-page .diagnostic-trace__rail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--diagnostic-rail-x);
+  width: 3px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.our-approach-page .diagnostic-trace__track {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    rgba(72, 105, 102, 0.15) 0%,
+    rgba(72, 105, 102, 0.35) 100%
+  );
+}
+
+.our-approach-page .diagnostic-trace__pulse {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 50%;
+  background: #486966;
+  box-shadow:
+    0 0 0 3px rgba(72, 105, 102, 0.22),
+    0 0 12px rgba(72, 105, 102, 0.32);
+  animation:
+    diagnostic-pulse-travel 12s linear infinite,
+    diagnostic-pulse-color 12s linear infinite;
+}
+
+.our-approach-page .diagnostic-trace__pulse::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.5;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.our-approach-page .diagnostic-map-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.6vw, 14px);
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.our-approach-page .diagnostic-map-row {
+  display: grid;
+  grid-template-columns: var(--diagnostic-trace-col) minmax(0, 1fr);
+  column-gap: var(--diagnostic-map-gap);
+  align-items: start;
+  min-width: 0;
+}
+
+.our-approach-page .trace-stage {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr);
+  align-items: center;
+  align-self: start;
+  gap: 6px;
+  width: 100%;
+  min-width: 0;
+  margin-top: 12px;
+  padding: 8px 8px 8px 6px;
+  border-radius: 10px;
+  background: rgba(72, 105, 102, 0.06);
+  opacity: 0.72;
+  animation: diagnostic-trace-stage-focus 12s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.our-approach-page .trace-stage[data-step="1"] { animation-delay: 0.2s; }
+.our-approach-page .trace-stage[data-step="2"] { animation-delay: 2.2s; }
+.our-approach-page .trace-stage[data-step="3"] { animation-delay: 4.2s; }
+.our-approach-page .trace-stage[data-step="4"] { animation-delay: 6.2s; }
+.our-approach-page .trace-stage[data-step="5"] { animation-delay: 8.2s; }
+.our-approach-page .trace-stage[data-step="6"] { animation-delay: 10.2s; }
+
+.our-approach-page .trace-stage__dot {
+  width: 10px;
+  height: 10px;
+  margin-left: 0;
+  border: 2px solid rgba(72, 105, 102, 0.34);
+  border-radius: 50%;
+  background: #ffffff;
+  justify-self: center;
+  flex-shrink: 0;
+}
+
+.our-approach-page .trace-stage__label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: var(--ls-badge);
+  text-transform: uppercase;
+  color: #486966;
+  line-height: var(--lh-heading);
+  overflow-wrap: anywhere;
+}
+
+.our-approach-page .trace-stage--risk .trace-stage__dot {
+  border-color: rgba(155, 61, 61, 0.38);
+}
+
+.our-approach-page .trace-stage--resolve .trace-stage__dot {
+  border-color: rgba(2, 115, 67, 0.42);
+}
+
+.our-approach-page .diagnostic-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  min-height: 44px;
+  min-width: 0;
+  padding: 12px 14px 12px 12px;
+  border: 1px solid rgba(28, 46, 74, 0.08);
+  border-left: 4px solid rgba(72, 105, 102, 0.28);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 2px rgba(28, 46, 74, 0.04);
+  opacity: 0.55;
+  animation: diagnostic-step-focus 12s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.our-approach-page .diagnostic-step::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: var(--diagnostic-map-gap);
+  height: 0;
+  border-top: 1px dashed rgba(72, 105, 102, 0.25);
+  transform: translate(calc(-1 * var(--diagnostic-map-gap)), -50%);
+  pointer-events: none;
+  animation: diagnostic-step-connector 12s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.our-approach-page .diagnostic-step[data-step="1"] { animation-delay: 0.2s; }
+.our-approach-page .diagnostic-step[data-step="2"] { animation-delay: 2.2s; }
+.our-approach-page .diagnostic-step[data-step="3"] { animation-delay: 4.2s; }
+.our-approach-page .diagnostic-step[data-step="4"] { animation-delay: 6.2s; }
+.our-approach-page .diagnostic-step[data-step="5"] { animation-delay: 8.2s; }
+.our-approach-page .diagnostic-step[data-step="6"] { animation-delay: 10.2s; }
+
+.our-approach-page .diagnostic-step[data-step="1"]::before,
+.our-approach-page .diagnostic-step[data-step="2"]::before,
+.our-approach-page .diagnostic-step[data-step="3"]::before,
+.our-approach-page .diagnostic-step[data-step="4"]::before,
+.our-approach-page .diagnostic-step[data-step="5"]::before,
+.our-approach-page .diagnostic-step[data-step="6"]::before {
+  animation-delay: inherit;
+}
+
+.our-approach-page .diagnostic-step[data-step="1"] .diagnostic-step__index,
+.our-approach-page .diagnostic-step[data-step="2"] .diagnostic-step__index,
+.our-approach-page .diagnostic-step[data-step="3"] .diagnostic-step__index,
+.our-approach-page .diagnostic-step[data-step="4"] .diagnostic-step__index {
+  animation-delay: inherit;
+}
+
+.our-approach-page .diagnostic-step[data-step="5"] .diagnostic-step__index {
+  animation-name: diagnostic-step-index-risk;
+  animation-delay: 8.2s;
+}
+
+.our-approach-page .diagnostic-step[data-step="6"] .diagnostic-step__index {
+  animation-name: diagnostic-step-index-resolve;
+  animation-delay: 10.2s;
+}
+
+.our-approach-page .diagnostic-step__index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-size: var(--text-xs);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--ls-badge);
+  color: rgba(28, 46, 74, 0.55);
+  background: rgba(28, 46, 74, 0.06);
+  animation: diagnostic-step-index-focus 12s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.our-approach-page .diagnostic-step__label {
+  margin: 0;
+  font-size: var(--text-base-sm);
+  font-weight: 600;
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-heading);
+  color: #1c2e4a;
+  overflow-wrap: anywhere;
+}
+
+.our-approach-page .diagnostic-step__label strong {
+  font-weight: 700;
+  color: #1c2e4a;
+}
+
+.our-approach-page .trace-stage.diagnostic-step--hero-highlight .trace-stage__dot {
+  box-shadow: 0 0 0 4px rgba(2, 115, 67, 0.35);
+}
+
+.our-approach-page .diagnostic-step.diagnostic-step--hero-highlight {
+  opacity: 1 !important;
+  border-left-color: rgba(2, 115, 67, 0.72);
+  box-shadow:
+    0 0 0 1px rgba(2, 115, 67, 0.22),
+    0 4px 12px rgba(2, 115, 67, 0.08);
+}
+
+.our-approach-page .diagnostic-step--risk {
+  border-left-color: rgba(155, 61, 61, 0.32);
+}
+
+.our-approach-page .diagnostic-step--resolve {
+  border-left-color: rgba(2, 115, 67, 0.34);
+}
+
+.our-approach-page .diagnostic-result {
+  margin-top: clamp(18px, 2.4vw, 24px);
+  padding: 16px 18px;
+  border: 1px solid rgba(2, 115, 67, 0.14);
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(240, 253, 244, 0.95) 0%,
+    rgba(255, 255, 255, 0.92) 100%
+  );
+  box-shadow: 0 1px 2px rgba(28, 46, 74, 0.04);
+}
+
+.our-approach-page .diagnostic-result p {
+  margin: 0;
+  color: rgba(28, 46, 74, 0.82);
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: var(--lh-base);
+}
+
+@keyframes diagnostic-status-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.06); opacity: 0.88; }
+}
+
+@keyframes diagnostic-pulse-travel {
+  0% { top: 0%; opacity: 0.45; }
+  8%, 92% { opacity: 1; }
+  100% { top: calc(100% - 10px); opacity: 0.45; }
+}
+
+@keyframes diagnostic-step-connector {
+  0%, 8%, 100% { opacity: 0.25; }
+  12%, 22% { opacity: 0.55; }
+}
+
+@keyframes diagnostic-step-index-focus {
+  0%, 8%, 100% {
+    color: rgba(28, 46, 74, 0.55);
+    background: rgba(28, 46, 74, 0.06);
+  }
+
+  12%, 22% {
+    color: #ffffff;
+    background: #486966;
+  }
+}
+
+@keyframes diagnostic-pulse-color {
+  0%, 62% {
+    background: #486966;
+    box-shadow:
+      0 0 0 3px rgba(72, 105, 102, 0.22),
+      0 0 10px rgba(72, 105, 102, 0.28);
+  }
+
+  66%, 80% {
+    background: #9b3d3d;
+    box-shadow:
+      0 0 0 3px rgba(155, 61, 61, 0.24),
+      0 0 12px rgba(155, 61, 61, 0.32);
+  }
+
+  83%, 96% {
+    background: #027343;
+    box-shadow:
+      0 0 0 3px rgba(2, 115, 67, 0.22),
+      0 0 12px rgba(2, 115, 67, 0.34);
+  }
+
+  97%, 100% {
+    background: #486966;
+    box-shadow:
+      0 0 0 3px rgba(72, 105, 102, 0.22),
+      0 0 10px rgba(72, 105, 102, 0.28);
+  }
+}
+
+@keyframes diagnostic-step-focus {
+  0%, 8%, 100% {
+    opacity: 0.55;
+    transform: translateY(0);
+    border-color: rgba(28, 46, 74, 0.08);
+    border-left-color: rgba(72, 105, 102, 0.28);
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 1px 2px rgba(28, 46, 74, 0.04);
+  }
+
+  12%, 22% {
+    opacity: 1;
+    transform: translateY(-1px);
+    border-color: rgba(72, 105, 102, 0.28);
+    border-left-color: rgba(72, 105, 102, 0.56);
+    background: #f8fafc;
+    box-shadow: 0 8px 24px rgba(72, 105, 102, 0.12);
+  }
+}
+
+@keyframes diagnostic-trace-stage-focus {
+  0%, 8%, 100% {
+    opacity: 0.72;
+    transform: translateX(0);
+  }
+
+  12%, 22% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.our-approach-page .trace-stage[data-step="1"] .trace-stage__dot,
+.our-approach-page .trace-stage[data-step="2"] .trace-stage__dot,
+.our-approach-page .trace-stage[data-step="3"] .trace-stage__dot,
+.our-approach-page .trace-stage[data-step="4"] .trace-stage__dot {
+  animation: diagnostic-trace-dot-focus 12s ease-in-out infinite;
+}
+
+.our-approach-page .trace-stage[data-step="1"] .trace-stage__dot { animation-delay: 0.2s; }
+.our-approach-page .trace-stage[data-step="2"] .trace-stage__dot { animation-delay: 2.2s; }
+.our-approach-page .trace-stage[data-step="3"] .trace-stage__dot { animation-delay: 4.2s; }
+.our-approach-page .trace-stage[data-step="4"] .trace-stage__dot { animation-delay: 6.2s; }
+.our-approach-page .trace-stage[data-step="5"] .trace-stage__dot { animation: diagnostic-trace-dot-risk 12s ease-in-out infinite 8.2s; }
+.our-approach-page .trace-stage[data-step="6"] .trace-stage__dot { animation: diagnostic-trace-dot-resolve 12s ease-in-out infinite 10.2s; }
+
+.our-approach-page .trace-stage[data-step="1"] .trace-stage__label,
+.our-approach-page .trace-stage[data-step="2"] .trace-stage__label,
+.our-approach-page .trace-stage[data-step="3"] .trace-stage__label,
+.our-approach-page .trace-stage[data-step="4"] .trace-stage__label,
+.our-approach-page .trace-stage[data-step="5"] .trace-stage__label,
+.our-approach-page .trace-stage[data-step="6"] .trace-stage__label {
+  animation: diagnostic-trace-label-focus 12s ease-in-out infinite;
+}
+
+.our-approach-page .trace-stage[data-step="1"] .trace-stage__label { animation-delay: 0.2s; }
+.our-approach-page .trace-stage[data-step="2"] .trace-stage__label { animation-delay: 2.2s; }
+.our-approach-page .trace-stage[data-step="3"] .trace-stage__label { animation-delay: 4.2s; }
+.our-approach-page .trace-stage[data-step="4"] .trace-stage__label { animation-delay: 6.2s; }
+.our-approach-page .trace-stage[data-step="5"] .trace-stage__label { animation-delay: 8.2s; animation-name: diagnostic-trace-label-risk; }
+.our-approach-page .trace-stage[data-step="6"] .trace-stage__label { animation-delay: 10.2s; animation-name: diagnostic-trace-label-resolve; }
+
+.our-approach-page .diagnostic-step--risk {
+  animation-name: diagnostic-step-risk;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.our-approach-page .diagnostic-step--resolve {
+  animation-name: diagnostic-step-resolve;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes diagnostic-trace-dot-focus {
+  0%, 8%, 100% {
+    border-color: rgba(72, 105, 102, 0.34);
+    background: #ffffff;
+    box-shadow: none;
+  }
+
+  12%, 22% {
+    border-color: rgba(72, 105, 102, 0.56);
+    background: #486966;
+    box-shadow: 0 0 0 3px rgba(72, 105, 102, 0.12);
+  }
+}
+
+@keyframes diagnostic-trace-dot-risk {
+  0%, 8%, 100% {
+    border-color: rgba(155, 61, 61, 0.38);
+    background: #ffffff;
+    box-shadow: none;
+  }
+
+  12%, 22% {
+    border-color: #9b3d3d;
+    background: #9b3d3d;
+    box-shadow: 0 0 0 4px rgba(155, 61, 61, 0.16);
+  }
+}
+
+@keyframes diagnostic-trace-dot-resolve {
+  0%, 8%, 100% {
+    border-color: rgba(2, 115, 67, 0.42);
+    background: #ffffff;
+    box-shadow: none;
+  }
+
+  12%, 22% {
+    border-color: #027343;
+    background: #027343;
+    box-shadow: 0 0 0 4px rgba(2, 115, 67, 0.18);
+  }
+}
+
+@keyframes diagnostic-trace-label-focus {
+  0%, 8%, 100% {
+    color: #486966;
+    font-weight: 700;
+  }
+
+  12%, 22% {
+    color: #1c2e4a;
+    font-weight: 800;
+  }
+}
+
+@keyframes diagnostic-trace-label-risk {
+  0%, 8%, 100% {
+    color: #486966;
+    font-weight: 700;
+  }
+
+  12%, 22% {
+    color: #9b3d3d;
+    font-weight: 800;
+  }
+}
+
+@keyframes diagnostic-trace-label-resolve {
+  0%, 8%, 100% {
+    color: #486966;
+    font-weight: 700;
+  }
+
+  12%, 22% {
+    color: #027343;
+    font-weight: 800;
+  }
+}
+
+@keyframes diagnostic-step-index-risk {
+  0%, 8%, 100% {
+    color: rgba(28, 46, 74, 0.55);
+    background: rgba(28, 46, 74, 0.06);
+  }
+
+  12%, 22% {
+    color: #ffffff;
+    background: #9b3d3d;
+  }
+}
+
+@keyframes diagnostic-step-index-resolve {
+  0%, 8%, 100% {
+    color: rgba(28, 46, 74, 0.55);
+    background: rgba(28, 46, 74, 0.06);
+  }
+
+  12%, 22% {
+    color: #ffffff;
+    background: #027343;
+  }
+}
+
+@keyframes diagnostic-step-risk {
+  0%, 8%, 100% {
+    opacity: 0.55;
+    transform: translateY(0);
+    border-color: rgba(28, 46, 74, 0.08);
+    border-left-color: rgba(155, 61, 61, 0.32);
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 1px 2px rgba(28, 46, 74, 0.04);
+  }
+
+  12%, 22% {
+    opacity: 1;
+    transform: translateY(-1px);
+    border-color: rgba(155, 61, 61, 0.28);
+    border-left-color: #9b3d3d;
+    background: #fffafa;
+    box-shadow: 0 8px 24px rgba(155, 61, 61, 0.1);
+  }
+}
+
+@keyframes diagnostic-step-resolve {
+  0%, 8%, 100% {
+    opacity: 0.55;
+    transform: translateY(0);
+    border-color: rgba(28, 46, 74, 0.08);
+    border-left-color: rgba(2, 115, 67, 0.34);
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 1px 2px rgba(28, 46, 74, 0.04);
+  }
+
+  12%, 22% {
+    opacity: 1;
+    transform: translateY(-1px);
+    border-color: rgba(2, 115, 67, 0.28);
+    border-left-color: #027343;
+    background: #f7fdf9;
+    box-shadow: 0 8px 24px rgba(2, 115, 67, 0.1);
+  }
+}
+
+/* Tablet + mobile: stack stage label above step (2-col trace rail is too narrow 641–920px) */
+@media (max-width: 920px) {
+  .our-approach-page .approach-diagnostic-map {
+    padding: clamp(18px, 4vw, 28px);
+    border-radius: 14px;
+  }
+
+  .our-approach-page .approach-diagnostic-map::after {
+    border-radius: 14px 14px 0 0;
+  }
+
+  .our-approach-page .approach-diagnostic-map__head--compact {
+    margin-bottom: clamp(14px, 2vw, 18px);
+  }
+
+  .our-approach-page .approach-diagnostic-map__body {
+    display: block;
+    --diagnostic-map-gap: 12px;
+  }
+
+  .our-approach-page .diagnostic-trace__rail {
+    display: none;
+  }
+
+  .our-approach-page .diagnostic-map-rows {
+    gap: 0;
+  }
+
+  .our-approach-page .diagnostic-map-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding-block: clamp(12px, 2.2vw, 16px);
+    min-width: 0;
+  }
+
+  .our-approach-page .diagnostic-map-row + .diagnostic-map-row {
+    border-top: 1px solid rgba(28, 46, 74, 0.07);
+  }
+
+  .our-approach-page .trace-stage {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    max-width: 100%;
+    margin-top: 0;
+    padding: 5px 12px 5px 8px;
+    grid-template-columns: unset;
+    min-height: 0;
+  }
+
+  .our-approach-page .trace-stage__dot {
+    margin-left: 0;
+  }
+
+  .our-approach-page .trace-stage__label {
+    line-height: var(--lh-heading);
+  }
+
+  .our-approach-page .diagnostic-step {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    margin-left: 0;
+    border-left: 3px solid rgba(72, 105, 102, 0.28);
+  }
+
+  .our-approach-page .diagnostic-step::before {
+    display: none;
+  }
+
+  .our-approach-page .diagnostic-step__index {
+    width: 28px;
+    height: 28px;
+    font-size: var(--text-2xs);
+  }
+
+  .our-approach-page .diagnostic-step__label {
+    font-size: var(--text-base-sm);
+    line-height: var(--lh-base);
+  }
+
+  .our-approach-page .diagnostic-step__label strong {
+    display: inline;
+  }
+
+  .our-approach-page .diagnostic-result {
+    margin-top: clamp(14px, 2.4vw, 20px);
+    padding: 14px 16px;
+  }
+
+  .our-approach-page .diagnostic-result p {
+    font-size: var(--text-base);
+    line-height: var(--lh-loose);
+  }
+}
+
+@media (max-width: 640px) {
+  .our-approach-page .approach-diagnostic-map {
+    padding: clamp(16px, 4vw, 22px);
+    border-radius: 12px;
+  }
+
+  .our-approach-page .approach-diagnostic-map::after {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .our-approach-page .diagnostic-map-row {
+    padding-block: 14px;
+  }
+
+  .our-approach-page .diagnostic-step {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .our-approach-page .diagnostic-step__index {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-approach-page .approach-diagnostic-map__status {
+    font-size: var(--text-2xs);
+    padding: 6px 12px;
+  }
+
+  .our-approach-page .diagnostic-step__label {
+    font-size: var(--text-base-sm);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .our-approach-page .approach-diagnostic-map__status::before,
+  .our-approach-page .diagnostic-trace__pulse,
+  .our-approach-page .diagnostic-trace__pulse::after,
+  .our-approach-page .trace-stage,
+  .our-approach-page .trace-stage__dot,
+  .our-approach-page .trace-stage__label,
+  .our-approach-page .diagnostic-step,
+  .our-approach-page .diagnostic-step::before,
+  .our-approach-page .diagnostic-step__index {
+    animation: none !important;
+  }
+
+  .our-approach-page .diagnostic-trace__pulse {
+    display: none;
+  }
+
+  .our-approach-page .trace-stage,
+  .our-approach-page .diagnostic-step {
+    opacity: 1;
+    transform: none;
+  }
+
+  .our-approach-page .trace-stage__dot {
+    background: #486966;
+    border-color: #486966;
+  }
+
+  .our-approach-page .trace-stage--risk .trace-stage__dot {
+    background: #9b3d3d;
+    border-color: #9b3d3d;
+  }
+
+  .our-approach-page .trace-stage--resolve .trace-stage__dot {
+    background: #027343;
+    border-color: #027343;
+  }
+
+  .our-approach-page .diagnostic-step--resolve {
+    border-left-color: #027343;
+    background: #f7fdf9;
+    box-shadow: 0 1px 2px rgba(28, 46, 74, 0.04);
+  }
+
+  .our-approach-page .diagnostic-step--resolve .diagnostic-step__index {
+    color: #ffffff;
+    background: #027343;
+  }
+
+  .our-approach-page .diagnostic-step::before {
+    opacity: 0.35;
+  }
+}
+
+
+/* Our Approach — action close section */
+.our-approach-page .approach-action-close {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(48px, 8vw, 72px) 0;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(72, 105, 102, 0.10), transparent 30rem),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  border-top: 1px solid rgba(28, 46, 74, 0.10);
+  border-bottom: 1px solid rgba(28, 46, 74, 0.10);
+}
+
+.our-approach-page .approach-action-close .container {
+  min-width: 0;
+}
+
+.our-approach-page .approach-action-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+  min-width: 0;
+  padding: clamp(30px, 5vw, 56px);
+  border: 1px solid rgba(28, 46, 74, 0.14);
+  border-top: 3px solid #027343;
+  background:
+    linear-gradient(rgba(28, 46, 74, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 46, 74, 0.025) 1px, transparent 1px),
+    #ffffff;
+  background-size: 28px 28px, 28px 28px, auto;
+}
+
+.our-approach-page .approach-action-panel__copy .eyebrow {
+  margin-bottom: 10px;
+}
+
+.our-approach-page .approach-action-panel__copy h2 {
+  max-width: 18ch;
+  margin-bottom: 18px;
+  letter-spacing: var(--ls-h1);
+}
+
+.our-approach-page .approach-action-panel__copy p:not(.eyebrow) {
+  max-width: 58ch;
+  color: rgba(28, 46, 74, 0.74);
+  line-height: var(--lh-loose);
+}
+
+.our-approach-page .approach-action-panel__copy p:not(.eyebrow) + p {
+  margin-top: 14px;
+}
+
+.our-approach-page .approach-action-steps {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 0;
+  border: 1px solid rgba(28, 46, 74, 0.12);
+  background: rgba(248, 250, 252, 0.72);
+}
+
+.our-approach-page .approach-action-steps li {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  gap: 14px 18px;
+  padding: 20px;
+  min-width: 0;
+  border-bottom: 1px solid rgba(28, 46, 74, 0.10);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.our-approach-page .approach-action-steps li:last-child {
+  border-bottom: none;
+}
+
+.our-approach-page .approach-action-steps span {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  min-height: 2.35rem;
+  border: 1px solid rgba(2, 115, 67, 0.24);
+  background: #f0fdf4;
+  color: #027343;
+  font-family: Montserrat, sans-serif;
+  font-size: var(--text-sm);
+  font-weight: 900;
+  letter-spacing: var(--ls-label);
+}
+
+.our-approach-page .approach-action-steps strong {
+  display: block;
+  color: #1c2e4a;
+  font-family: Montserrat, sans-serif;
+  font-size: var(--text-base);
+  line-height: var(--lh-heading);
+  overflow-wrap: anywhere;
+}
+
+.our-approach-page .approach-action-steps p {
+  margin: 0;
+  color: rgba(28, 46, 74, 0.68);
+  font-size: var(--text-base-sm);
+  line-height: var(--lh-base);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 920px) {
+  .our-approach-page .approach-action-panel {
+    grid-template-columns: 1fr;
+    padding: clamp(26px, 5vw, 40px);
+  }
+
+  .our-approach-page .approach-action-panel__copy h2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .our-approach-page .approach-action-close {
+    padding: 48px 0;
+  }
+
+  .our-approach-page .approach-action-panel {
+    padding: clamp(22px, 5vw, 28px);
+  }
+
+  .our-approach-page .approach-action-steps li {
+    padding: 16px;
+    gap: 10px 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .our-approach-page .approach-hero__grid {
+    gap: 44px;
+  }
+
+  .our-approach-page .approach-hero__instrument {
+    width: min(100%, 320px);
+  }
+
+  .our-approach-page .approach-hero__constellation {
+    width: min(100%, 300px);
+  }
+
+  .our-approach-page .approach-hero__oct {
+    --oct-size: 76px;
+    gap: 5px;
+  }
+
+  .our-approach-page .approach-hero__oct--anchor {
+    --oct-size: 88px;
+  }
+
+  .our-approach-page .approach-hero__oct-label {
+    font-size: 0.5625rem;
+    letter-spacing: 0.05em;
+  }
+
+  .our-approach-page .approach-hero__oct-hint {
+    display: none;
+  }
+}
+
+/* Action close — mobile step grid (after base .approach-action-steps rules) */
+@media (max-width: 640px) {
+  .our-approach-page .approach-action-panel {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px 20px 32px;
+  }
+
+  .our-approach-page .approach-action-steps {
+    padding-left: 0;
+  }
+
+  .our-approach-page .approach-action-steps li {
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 12px;
+    row-gap: 4px;
+    align-items: start;
+  }
+
+  .our-approach-page .approach-action-steps li > span {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    padding-top: 2px;
+    width: auto;
+    min-height: 2rem;
+  }
+
+  .our-approach-page .approach-action-steps li > strong {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .our-approach-page .approach-action-steps li > p {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: var(--text-base-sm);
+    line-height: var(--lh-base);
+  }
+}

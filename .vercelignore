@@ -1,0 +1,15 @@
+node_modules
+archive
+# Exclude DE draft shell only — full de/ locale is deployed (see de/_draft/README.md)
+de/_draft/**
+.cursor
+assets/images/Bj*/
+assets/images/Journey
+assets/images/Projekt*
+assets/images/Björn_Seiler/
+assets/images/Audit/
+assets/images/archive/
+tools/*
+!tools/generate-sitemap.mjs
+!tools/sync-vercel-clean-urls.mjs
+!tools/vercel-clean-url-routes.mjs

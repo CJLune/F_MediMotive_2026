@@ -1,0 +1,99 @@
+@import './styles.legacy.css';
+@import './styles.redesign.css';
+@import './nav-dropdown.css';
+@import './expertise-upgrade.css';
+@import './case-studies-upgrade.css';
+@import './expertise-detail.css';
+@import './work-journey-upgrade.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* After Tailwind — case studies layout (must not use @import here) */
+.case-studies-page .container:not(.nav) {
+  width: min(100% - 48px, 1240px) !important;
+  max-width: min(100% - 48px, 1240px) !important;
+}
+
+/* Hero width: see assets/case-studies-upgrade.css (.case-hero__content) */
+
+/* After Tailwind — typography readability (loads after preflight h1–h6 reset) */
+.home-main .home-section-head .home-section-label,
+.home-main .home-section-label,
+.home-main .home-cred-group-label,
+.home-main [class*='section-label'] {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.home-main .home-case-card h3,
+.home-main .home-stage-card h3,
+.home-main .home-compact-card h3,
+.home-main .home-visible-grid h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+@media (max-width: 640px) {
+  .home-main .home-section-head p:not(.home-section-label):not([class*='section-label']),
+  .home-main .home-z-split__body > p,
+  .home-main .home-code-lead,
+  .home-main .hero.home-hero--editorial .hero-support,
+  .home-main .home-case-card p,
+  .home-main .home-stage-card p,
+  .home-main .home-compact-card p,
+  .home-main .home-code-step .home-code-text {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  .home-main .home-section-head .home-section-label,
+  .home-main .home-section-label,
+  .home-main .home-cred-group-label,
+  .home-main [class*='section-label'] {
+    font-size: 0.875rem;
+    line-height: 1.45;
+  }
+
+  .home-main .home-case-card h3,
+  .home-main .home-stage-card h3,
+  .home-main .home-compact-card h3,
+  .home-main .home-visible-grid h3 {
+    font-size: 1.07rem;
+  }
+}
+
+/* Services page — labels live outside .home-main */
+.services-page main .home-section-label,
+.services-page main .home-cred-group-label,
+.services-page main [class*='section-label'] {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .services-page main .home-section-label,
+  .services-page main .home-cred-group-label,
+  .services-page main [class*='section-label'] {
+    font-size: 0.875rem;
+    line-height: 1.45;
+  }
+
+  .services-page main .section-head p:not(.home-section-label):not([class*='section-label']),
+  .services-page main .section p:not(.home-section-label):not([class*='section-label']):not([class*='trigger']) {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+}
+
+/* Expertise detail — FAQ intro + heading centered (loads after Tailwind) */
+.expertise-detail-page .ed-section--faq > .ed-prose--narrow {
+  text-align: center;
+}
+
+.expertise-detail-page .ed-section--faq > .ed-prose--narrow > h2,
+.expertise-detail-page .ed-section--faq .ed-faq__intro {
+  text-align: center;
+}
