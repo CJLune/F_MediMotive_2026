@@ -1,6 +1,5 @@
 #!/bin/sh
-# Strip oversized paths from git history so GitHub Desktop can push.
-# Root cause: files >100MB and ~1GB .git folder cause "remote disconnected".
+# Remove GitHub-blocked paths from git and verify before push.
 set -e
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 LOG="$ROOT/.cursor/debug-a9426f.log"
@@ -11,60 +10,69 @@ log_json() {
   hid="$2"
   data="$3"
   mkdir -p "$ROOT/.cursor" 2>/dev/null || true
-  printf '{"sessionId":"a9426f","hypothesisId":"%s","location":"prepare-github-push.sh","message":"%s","data":%s,"timestamp":%s,"runId":"pre-fix"}\n' \
+  printf '{"sessionId":"a9426f","hypothesisId":"%s","location":"prepare-github-push.sh","message":"%s","data":%s,"timestamp":%s,"runId":"fix-v2"}\n' \
     "$hid" "$msg" "$data" "$TS" >> "$LOG" 2>/dev/null || true
+}
+
+count_over100() {
+  git ls-tree -r -l HEAD 2>/dev/null | awk '$4>104857600 {c++} END{print c+0}'
+}
+
+largest_mb() {
+  git ls-tree -r -l HEAD 2>/dev/null | awk '{if($4>m)m=$4} END{printf "%.0f", m/1048576}'
 }
 
 cd "$ROOT"
 
-GIT_MB=$(du -sm .git 2>/dev/null | awk '{print $1}')
-WORK_MB=$(du -sm . 2>/dev/null | awk '{print $1}')
-OVER100=$(git rev-list --objects --all 2>/dev/null | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' 2>/dev/null | awk '/^blob/ && $3>104857600 {print $3,$4}' | wc -l | tr -d ' ')
-log_json "repo size before cleanup" "H1" "{\"gitFolderMB\":\"$GIT_MB\",\"workTreeMB\":\"$WORK_MB\",\"blobsOver100MB\":\"$OVER100\"}"
+BEFORE_GIT_MB=$(du -sm .git | awk '{print $1}')
+BEFORE_OVER=$(count_over100)
+log_json "before" "H1" "{\"gitFolderMB\":\"$BEFORE_GIT_MB\",\"filesOver100MB\":\"$BEFORE_OVER\"}"
 
-if [ "$OVER100" != "0" ] && [ -n "$OVER100" ]; then
-  git rev-list --objects --all 2>/dev/null | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' 2>/dev/null | awk '/^blob/ && $3>104857600 {printf "%.0fMB %s\n", $3/1048576, $4}' | head -5 | while read line; do
-    log_json "oversized blob" "H1" "{\"file\":\"$line\"}"
-  done
-fi
-
-echo "=== MediMotive GitHub push prep ==="
-echo "Before: .git ≈ ${GIT_MB}MB, oversized blobs: ${OVER100}"
+echo "=== GitHub push fix (v2) ==="
+echo "Before: .git ${BEFORE_GIT_MB}MB, files over 100MB: ${BEFORE_OVER}"
 echo ""
 
-if git show-ref --verify --quiet refs/heads/backup-before-github-clean; then
-  echo "Backup branch already exists: backup-before-github-clean"
-else
-  git branch backup-before-github-clean
-  echo "Saved backup branch: backup-before-github-clean"
+# Ensure excludes exist
+grep -q '^\.playwright-browsers/' .gitignore || echo '.playwright-browsers/' >> .gitignore
+grep -q '^archive/' .gitignore || echo 'archive/' >> .gitignore
+grep -q '^assets/images/Journey/' .gitignore || echo 'assets/images/Journey/' >> .gitignore
+
+# Drop bloated paths from the index (files stay on disk)
+git rm -r --cached --ignore-unmatch .playwright-browsers archive assets/images/Journey .cursor 2>/dev/null || true
+
+git add .gitignore
+if git diff --cached --quiet && [ "$(count_over100)" != "0" ]; then
+  echo "ERROR: oversized files still tracked. Contact support."
+  git ls-tree -r -l HEAD | awk '$4>104857600 {printf "  %.0fMB %s\n", $4/1048576, $5}'
+  exit 1
 fi
 
-CURRENT=$(git branch --show-current)
-git checkout --orphan github-clean-main
-git add -A
-git status --short | head -5
-FILE_COUNT=$(git diff --cached --name-only | wc -l | tr -d ' ')
-CACHED_MB=$(git diff --cached --name-only | xargs du -ch 2>/dev/null | tail -1 | awk '{print $1}')
-log_json "orphan staging" "H2" "{\"trackedFiles\":\"$FILE_COUNT\",\"stagedSize\":\"${CACHED_MB:-unknown}\"}"
-
-git commit -m "$(cat <<'EOF'
+if ! git diff --cached --quiet; then
+  git commit --amend -m "$(cat <<'EOF'
 MediMotive site — GitHub-safe bundle
 
-Exclude local-only paths (.playwright-browsers, archive, large media)
-so push stays under GitHub file-size limits.
+Excludes local-only paths (.playwright-browsers, archive, Journey media)
+so push stays under GitHub 100MB file limit.
 EOF
 )"
+fi
 
-git branch -D "$CURRENT" 2>/dev/null || true
-git branch -m main
+AFTER_OVER=$(count_over100)
+LARGEST=$(largest_mb)
+if [ "$AFTER_OVER" != "0" ]; then
+  log_json "verify failed" "H1" "{\"filesOver100MB\":\"$AFTER_OVER\",\"largestMB\":\"$LARGEST\"}"
+  echo "ERROR: still ${AFTER_OVER} file(s) over 100MB. Push would fail."
+  git ls-tree -r -l HEAD | awk '$4>104857600 {printf "  %.0fMB %s\n", $4/1048576, $5}'
+  exit 1
+fi
 
+git branch -D backup-before-github-clean 2>/dev/null || true
 git reflog expire --expire=now --all 2>/dev/null || true
 git gc --prune=now --aggressive 2>/dev/null || true
 
-GIT_MB_AFTER=$(du -sm .git 2>/dev/null | awk '{print $1}')
-log_json "repo size after cleanup" "H2" "{\"gitFolderMB\":\"$GIT_MB_AFTER\"}"
+AFTER_GIT_MB=$(du -sm .git | awk '{print $1}')
+TRACKED=$(git ls-files | wc -l | tr -d ' ')
+log_json "after" "H2" "{\"gitFolderMB\":\"$AFTER_GIT_MB\",\"filesOver100MB\":\"0\",\"largestMB\":\"$LARGEST\",\"trackedFiles\":\"$TRACKED\"}"
 
-echo ""
-echo "After:  .git ≈ ${GIT_MB_AFTER}MB"
-echo "Done. In GitHub Desktop: Repository → Push origin"
-echo "Backup of old history: git checkout backup-before-github-clean"
+echo "After:  .git ${AFTER_GIT_MB}MB, largest file ${LARGEST}MB, ${TRACKED} tracked files"
+echo "OK — open GitHub Desktop and click Push origin."
