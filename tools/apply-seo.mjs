@@ -6,6 +6,7 @@
 import fs from 'fs';
 import path from 'path';
 import { canonicalForHtmlRoute } from './vercel-clean-url-routes.mjs';
+import { LOCALE_PAIRS } from './locale-url-map.mjs';
 import { buildFaviconLinkTags } from './favicon-urls.mjs';
 import { buildGoogleMetaTag, resolveMetaContent, loadGscConfig } from './google-site-verification.mjs';
 
@@ -23,42 +24,9 @@ const NOINDEX = new Set(['imprint.html', 'privacy.html', 'gallery.html']);
 const HREFLANG_CLUSTER_ENABLED = true;
 
 /** EN html filename → public path pairs (gallery excluded — noindex, no reciprocal hreflang). */
-const HREFLANG_PAIRS = {
-  'index.html': { enPath: '/', dePath: '/de/' },
-  'about.html': { enPath: '/about', dePath: '/de/about' },
-  'services.html': { enPath: '/services', dePath: '/de/services' },
-  'our-approach.html': { enPath: '/our-approach', dePath: '/de/our-approach' },
-  'case-studies.html': { enPath: '/case-studies', dePath: '/de/case-studies' },
-  'certificates.html': { enPath: '/certificates', dePath: '/de/certificates' },
-  'regions.html': { enPath: '/regions', dePath: '/de/regions' },
-  'contact.html': { enPath: '/contact', dePath: '/de/contact' },
-  'imprint.html': { enPath: '/imprint', dePath: '/de/imprint' },
-  'privacy.html': { enPath: '/privacy', dePath: '/de/privacy' },
-  'rapid-response-troubleshooting.html': {
-    enPath: '/services/rapid-response-troubleshooting',
-    dePath: '/de/services/rapid-response-troubleshooting',
-  },
-  'supplier-quality-complaint-management.html': {
-    enPath: '/services/supplier-quality-complaint-management',
-    dePath: '/de/services/supplier-quality-complaint-management',
-  },
-  'ramp-up-process-stability.html': {
-    enPath: '/services/ramp-up-process-stability',
-    dePath: '/de/services/ramp-up-process-stability',
-  },
-  'early-phase-risk-control-design-for-quality.html': {
-    enPath: '/services/early-phase-risk-control-design-for-quality',
-    dePath: '/de/services/early-phase-risk-control-design-for-quality',
-  },
-  'qms-audit-regulatory-support.html': {
-    enPath: '/services/qms-audit-regulatory-support',
-    dePath: '/de/services/qms-audit-regulatory-support',
-  },
-  'knowledge-gap-transition-security.html': {
-    enPath: '/services/knowledge-gap-transition-security',
-    dePath: '/de/services/knowledge-gap-transition-security',
-  },
-};
+const HREFLANG_PAIRS = Object.fromEntries(
+  Object.entries(LOCALE_PAIRS).filter(([file]) => file !== 'gallery.html'),
+);
 
 function buildHreflangTags(filename) {
   if (!HREFLANG_CLUSTER_ENABLED) return '';

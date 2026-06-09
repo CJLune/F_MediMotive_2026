@@ -10,6 +10,7 @@ import path from 'path';
 import {
   buildCleanUrlRewrites,
   buildDeCleanUrlRewrites,
+  buildDeLegacySlugRedirects,
   buildExpertiseFlatRedirects,
   buildServicesAssetsRewrite,
   CLEAN_URL_SLUGS,
@@ -67,6 +68,7 @@ function main() {
     ...STATIC_REDIRECTS,
     ...buildHtmlToCleanRedirects(),
     ...buildExpertiseFlatRedirects(),
+    ...buildDeLegacySlugRedirects(),
   ];
 
   fs.writeFileSync(VERCEL_PATH, `${JSON.stringify(config, null, 2)}\n`, 'utf8');

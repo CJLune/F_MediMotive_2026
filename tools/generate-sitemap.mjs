@@ -6,6 +6,7 @@
 import fs from 'fs';
 import path from 'path';
 import { canonicalForHtmlRoute } from './vercel-clean-url-routes.mjs';
+import { LOCALE_PAIRS } from './locale-url-map.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const SITE = 'https://medimotive.de';
@@ -70,6 +71,12 @@ function parseCsv(text) {
   return rows;
 }
 
+function routeToDeLoc(enRoute) {
+  const pair = LOCALE_PAIRS[enRoute];
+  if (!pair?.dePath) return null;
+  return pair.dePath === '/de/' ? `${SITE}/de/` : `${SITE}${pair.dePath}`;
+}
+
 function lastmodForRoute(route) {
   const filePath = path.join(ROOT, route);
   try {
@@ -78,6 +85,10 @@ function lastmodForRoute(route) {
   } catch {
     return null;
   }
+}
+
+function lastmodForDeFile(deFile) {
+  return lastmodForRoute(deFile);
 }
 
 function buildPages(rows) {
@@ -108,6 +119,20 @@ function buildPages(rows) {
       changefreq,
       ...(lastmod ? { lastmod } : {}),
     });
+
+    const deLoc = routeToDeLoc(route);
+    if (deLoc) {
+      const deFile = LOCALE_PAIRS[route]?.deFile;
+      const deLastmod = deFile ? lastmodForDeFile(deFile) : lastmod;
+      pages.push({
+        route: deFile ?? `de/${route}`,
+        loc: deLoc,
+        status: 'live',
+        priority,
+        changefreq,
+        ...(deLastmod ? { lastmod: deLastmod } : {}),
+      });
+    }
   }
 
   excluded.push({

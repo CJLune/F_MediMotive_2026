@@ -108,7 +108,7 @@ function initMobileExpertiseNav(drawer) {
 
   const href = expertiseLink.getAttribute('href') || '';
   const hrefPath = (href.split('#')[0].split('?')[0] || '').replace(/\/$/, '');
-  if (!/\/services(?:\.html)?$/.test(hrefPath)) return null;
+  if (!/(?:\/services|\/leistungen)(?:\.html)?$/.test(hrefPath)) return null;
 
   drawer.dataset.mobileNavEnhanced = 'true';
 
@@ -1365,11 +1365,14 @@ function initApproachHeroConstellation() {
     }
   }
 
+  let startIdleWatch = () => {};
+
   const activateInstrument = () => {
     instrument.classList.add('is-active');
     scheduleApproachGridTraceLayout();
     window.setTimeout(scheduleApproachGridTraceLayout, 520);
     startApproachStoryLoop();
+    startIdleWatch();
   };
 
   const isInViewport = () => {
@@ -1377,7 +1380,7 @@ function initApproachHeroConstellation() {
     return rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
   };
 
-  if (reducedMotion || isInViewport()) {
+  if (reducedMotion || isInViewport() || !desktopLayout) {
     activateInstrument();
   } else {
     const enterObserver = new IntersectionObserver((entries) => {
@@ -1406,13 +1409,11 @@ function initApproachHeroConstellation() {
   }
 
   if (!reducedMotion) {
-    let idleTimer = window.setTimeout(() => {
-      instrument.classList.add('is-idle-paused');
-      pauseApproachStoryLoop();
-    }, idlePauseMs);
+    let idleTimer = 0;
+    const touchOrTabletLayout = !finePointer || !desktopLayout;
 
-    const resumeIdle = () => {
-      instrument.classList.remove('is-idle-paused');
+    startIdleWatch = () => {
+      if (touchOrTabletLayout) return;
       window.clearTimeout(idleTimer);
       idleTimer = window.setTimeout(() => {
         instrument.classList.add('is-idle-paused');
@@ -1420,8 +1421,23 @@ function initApproachHeroConstellation() {
       }, idlePauseMs);
     };
 
+    const resumeIdle = () => {
+      instrument.classList.remove('is-idle-paused');
+      if (touchOrTabletLayout) {
+        if (!instrument.classList.contains('is-story-loop')) {
+          startApproachStoryLoop(800);
+        }
+        return;
+      }
+      startIdleWatch();
+      if (!instrument.classList.contains('is-story-loop')) {
+        startApproachStoryLoop(800);
+      }
+    };
+
     instrument.addEventListener('mouseenter', resumeIdle);
     instrument.addEventListener('focusin', resumeIdle);
+    instrument.addEventListener('pointerdown', resumeIdle, { passive: true });
     document.addEventListener('visibilitychange', () => {
       instrument.classList.toggle('is-tab-hidden', document.hidden);
       if (document.hidden) {

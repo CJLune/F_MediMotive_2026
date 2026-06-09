@@ -1,4 +1,8 @@
 import path from 'node:path';
+import fs from 'node:fs';
+import { buildDeRouteTable } from './locale-url-map.mjs';
+
+const ROOT = path.resolve(import.meta.dirname, '..');
 
 /** Expertise detail pages — public URL under /services/{slug}, files at repo root. */
 export const EXPERTISE_SLUGS = [
@@ -71,23 +75,47 @@ export function buildServicesAssetsRewrite() {
   };
 }
 
-/** Vercel rewrites for German locale under /de/ */
+/** Vercel rewrites: German public URLs → de/*.html files (translated slugs). */
 export function buildDeCleanUrlRewrites() {
   const deHome = { source: '/de', destination: '/de/index.html' };
-  const deServices = { source: '/de/services', destination: '/de/services.html' };
-  const deFlat = CLEAN_URL_SLUGS.map((slug) => ({
-    source: `/de/${slug}`,
-    destination: `/de/${slug}.html`,
-  }));
-  const deNestedExpertise = EXPERTISE_SLUGS.map((slug) => ({
-    source: `/de/services/${slug}`,
-    destination: `/de/services/${slug}.html`,
-  }));
-  const deServicesAssets = {
+  const deLeistungenAssets = {
+    source: '/de/leistungen/assets/:path*',
+    destination: '/assets/:path*',
+  };
+  const deLegacyServicesAssets = {
     source: '/de/services/assets/:path*',
     destination: '/assets/:path*',
   };
-  return [deHome, deServices, ...deFlat, ...deNestedExpertise, deServicesAssets];
+  const deRootAssets = {
+    source: '/de/assets/:path*',
+    destination: '/assets/:path*',
+  };
+  const routes = buildDeRouteTable().map(({ source, destination }) => ({
+    source: `/${source}`,
+    destination,
+  }));
+  return [deHome, deLeistungenAssets, deLegacyServicesAssets, deRootAssets, ...routes];
+}
+
+/** 301 legacy English /de/{slug} URLs → translated German paths. */
+export function buildDeLegacySlugRedirects() {
+  const redirects = buildDeRouteTable()
+    .filter((r) => r.legacyDePath)
+    .map((r) => ({
+      source: r.legacyDePath,
+      destination: `/${r.source}`,
+      permanent: true,
+    }));
+
+  const htmlLegacy = buildDeRouteTable()
+    .filter((r) => r.legacyDePath)
+    .map((r) => ({
+      source: `${r.legacyDePath}.html`,
+      destination: `/${r.source}`,
+      permanent: true,
+    }));
+
+  return [...redirects, ...htmlLegacy];
 }
 
 function resolveDeUrl(trimmed) {
@@ -98,17 +126,28 @@ function resolveDeUrl(trimmed) {
 
   const deRest = deMatch[1];
 
-  const deServicesAssets = deRest.match(/^services\/assets\/(.+)$/);
-  if (deServicesAssets) return `assets/${deServicesAssets[1]}`;
-
-  const deNestedExpertise = deRest.match(/^services\/([a-z0-9-]+)$/);
-  if (deNestedExpertise && EXPERTISE_SLUGS.includes(deNestedExpertise[1])) {
-    return `de/services/${deNestedExpertise[1]}.html`;
+  if (deRest.match(/^leistungen\/assets\//) || deRest.match(/^services\/assets\//)) {
+    return `assets/${deRest.replace(/^(?:leistungen|services)\/assets\//, '')}`;
   }
 
-  if (deRest === 'services') return 'de/services.html';
+  if (deRest.match(/^assets\/(.+)$/)) {
+    return `assets/${deRest.replace(/^assets\//, '')}`;
+  }
 
-  if (CLEAN_URL_SLUGS.includes(deRest)) return `de/${deRest}.html`;
+  const slugIndex = path.join('de', deRest, 'index.html');
+  if (fs.existsSync(path.join(ROOT, slugIndex))) return slugIndex;
+
+  const fullPath = `de/${deRest}`;
+  const route = buildDeRouteTable().find((r) => r.source === fullPath);
+  if (route) return route.deFile;
+
+  const legacyRoute = buildDeRouteTable().find((r) => {
+    if (!r.legacyDePath) return false;
+    return r.legacyDePath.replace(/^\//, '') === fullPath;
+  });
+  if (legacyRoute) {
+    return { redirect: `/${legacyRoute.source}` };
+  }
 
   if (path.extname(deRest)) return `de/${deRest}`;
   return `de/${deRest}.html`;

@@ -1,5 +1,5 @@
 {
-  "buildCommand": "NODE_ENV=production npm run build:css && npm run sitemap",
+  "buildCommand": "NODE_ENV=production npm run build:css && npm run sync:de-paths && npm run sitemap",
   "outputDirectory": ".",
   "redirects": [
     {
@@ -124,7 +124,7 @@
       "permanent": true
     },
     {
-      "source": "/early-phase-risk-design-for-quality.html",
+      "source": "/early-phase-risk-control-design-for-quality.html",
       "destination": "/services/early-phase-risk-control-design-for-quality",
       "permanent": true
     },
@@ -154,12 +154,7 @@
       "permanent": true
     },
     {
-      "source": "/early-phase-risk-design-for-quality",
-      "destination": "/services/early-phase-risk-control-design-for-quality",
-      "permanent": true
-    },
-    {
-      "source": "/services/early-phase-risk-design-for-quality",
+      "source": "/early-phase-risk-control-design-for-quality",
       "destination": "/services/early-phase-risk-control-design-for-quality",
       "permanent": true
     },
@@ -171,6 +166,196 @@
     {
       "source": "/knowledge-gap-transition-security",
       "destination": "/services/knowledge-gap-transition-security",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/early-phase-risk-control-design-for-quality",
+      "destination": "/de/leistungen/fruehphasen-risikosteuerung-design-for-quality",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/supplier-quality-complaint-management",
+      "destination": "/de/leistungen/lieferantenqualitaet-reklamationsmanagement",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/qms-audit-regulatory-support",
+      "destination": "/de/leistungen/qms-audit-regulatorische-unterstuetzung",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/knowledge-gap-transition-security",
+      "destination": "/de/leistungen/wissensluecken-uebergangssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/de/case-coated-aluminum-parts",
+      "destination": "/de/referenzprojekte/beschichtung-aluminiumteile",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/ramp-up-process-stability",
+      "destination": "/de/leistungen/hochlauf-prozessstabilitaet",
+      "permanent": true
+    },
+    {
+      "source": "/de/case-production-ramp-up",
+      "destination": "/de/referenzprojekte/produktionshochlauf",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/rapid-response-troubleshooting",
+      "destination": "/de/leistungen/schnelle-fehleranalyse",
+      "permanent": true
+    },
+    {
+      "source": "/de/case-studies",
+      "destination": "/de/referenzprojekte",
+      "permanent": true
+    },
+    {
+      "source": "/de/our-approach",
+      "destination": "/de/unser-ansatz",
+      "permanent": true
+    },
+    {
+      "source": "/de/certificates",
+      "destination": "/de/zertifikate",
+      "permanent": true
+    },
+    {
+      "source": "/de/privacy",
+      "destination": "/de/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/de/services",
+      "destination": "/de/leistungen",
+      "permanent": true
+    },
+    {
+      "source": "/de/about",
+      "destination": "/de/ueber-uns",
+      "permanent": true
+    },
+    {
+      "source": "/de/imprint",
+      "destination": "/de/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/de/work-journey",
+      "destination": "/de/berufsweg",
+      "permanent": true
+    },
+    {
+      "source": "/de/regions",
+      "destination": "/de/regionen",
+      "permanent": true
+    },
+    {
+      "source": "/de/contact",
+      "destination": "/de/kontakt",
+      "permanent": true
+    },
+    {
+      "source": "/de/gallery",
+      "destination": "/de/galerie",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/early-phase-risk-control-design-for-quality.html",
+      "destination": "/de/leistungen/fruehphasen-risikosteuerung-design-for-quality",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/supplier-quality-complaint-management.html",
+      "destination": "/de/leistungen/lieferantenqualitaet-reklamationsmanagement",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/qms-audit-regulatory-support.html",
+      "destination": "/de/leistungen/qms-audit-regulatorische-unterstuetzung",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/knowledge-gap-transition-security.html",
+      "destination": "/de/leistungen/wissensluecken-uebergangssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/de/case-coated-aluminum-parts.html",
+      "destination": "/de/referenzprojekte/beschichtung-aluminiumteile",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/ramp-up-process-stability.html",
+      "destination": "/de/leistungen/hochlauf-prozessstabilitaet",
+      "permanent": true
+    },
+    {
+      "source": "/de/case-production-ramp-up.html",
+      "destination": "/de/referenzprojekte/produktionshochlauf",
+      "permanent": true
+    },
+    {
+      "source": "/de/services/rapid-response-troubleshooting.html",
+      "destination": "/de/leistungen/schnelle-fehleranalyse",
+      "permanent": true
+    },
+    {
+      "source": "/de/case-studies.html",
+      "destination": "/de/referenzprojekte",
+      "permanent": true
+    },
+    {
+      "source": "/de/our-approach.html",
+      "destination": "/de/unser-ansatz",
+      "permanent": true
+    },
+    {
+      "source": "/de/certificates.html",
+      "destination": "/de/zertifikate",
+      "permanent": true
+    },
+    {
+      "source": "/de/privacy.html",
+      "destination": "/de/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/de/services.html",
+      "destination": "/de/leistungen",
+      "permanent": true
+    },
+    {
+      "source": "/de/about.html",
+      "destination": "/de/ueber-uns",
+      "permanent": true
+    },
+    {
+      "source": "/de/imprint.html",
+      "destination": "/de/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/de/work-journey.html",
+      "destination": "/de/berufsweg",
+      "permanent": true
+    },
+    {
+      "source": "/de/regions.html",
+      "destination": "/de/regionen",
+      "permanent": true
+    },
+    {
+      "source": "/de/contact.html",
+      "destination": "/de/kontakt",
+      "permanent": true
+    },
+    {
+      "source": "/de/gallery.html",
+      "destination": "/de/galerie",
       "permanent": true
     }
   ],
@@ -393,84 +578,92 @@
       "destination": "/de/index.html"
     },
     {
-      "source": "/de/services",
-      "destination": "/de/services.html"
-    },
-    {
-      "source": "/de/case-studies",
-      "destination": "/de/case-studies.html"
-    },
-    {
-      "source": "/de/case-coated-aluminum-parts",
-      "destination": "/de/case-coated-aluminum-parts.html"
-    },
-    {
-      "source": "/de/case-production-ramp-up",
-      "destination": "/de/case-production-ramp-up.html"
-    },
-    {
-      "source": "/de/about",
-      "destination": "/de/about.html"
-    },
-    {
-      "source": "/de/contact",
-      "destination": "/de/contact.html"
-    },
-    {
-      "source": "/de/certificates",
-      "destination": "/de/certificates.html"
-    },
-    {
-      "source": "/de/work-journey",
-      "destination": "/de/work-journey.html"
-    },
-    {
-      "source": "/de/our-approach",
-      "destination": "/de/our-approach.html"
-    },
-    {
-      "source": "/de/gallery",
-      "destination": "/de/gallery.html"
-    },
-    {
-      "source": "/de/regions",
-      "destination": "/de/regions.html"
-    },
-    {
-      "source": "/de/imprint",
-      "destination": "/de/imprint.html"
-    },
-    {
-      "source": "/de/privacy",
-      "destination": "/de/privacy.html"
-    },
-    {
-      "source": "/de/services/rapid-response-troubleshooting",
-      "destination": "/de/services/rapid-response-troubleshooting.html"
-    },
-    {
-      "source": "/de/services/supplier-quality-complaint-management",
-      "destination": "/de/services/supplier-quality-complaint-management.html"
-    },
-    {
-      "source": "/de/services/ramp-up-process-stability",
-      "destination": "/de/services/ramp-up-process-stability.html"
-    },
-    {
-      "source": "/de/services/early-phase-risk-control-design-for-quality",
-      "destination": "/de/services/early-phase-risk-control-design-for-quality.html"
-    },
-    {
-      "source": "/de/services/qms-audit-regulatory-support",
-      "destination": "/de/services/qms-audit-regulatory-support.html"
-    },
-    {
-      "source": "/de/services/knowledge-gap-transition-security",
-      "destination": "/de/services/knowledge-gap-transition-security.html"
+      "source": "/de/leistungen/assets/:path*",
+      "destination": "/assets/:path*"
     },
     {
       "source": "/de/services/assets/:path*",
       "destination": "/assets/:path*"
+    },
+    {
+      "source": "/de/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/de/leistungen/fruehphasen-risikosteuerung-design-for-quality",
+      "destination": "/de/services/early-phase-risk-control-design-for-quality.html"
+    },
+    {
+      "source": "/de/leistungen/lieferantenqualitaet-reklamationsmanagement",
+      "destination": "/de/services/supplier-quality-complaint-management.html"
+    },
+    {
+      "source": "/de/leistungen/qms-audit-regulatorische-unterstuetzung",
+      "destination": "/de/services/qms-audit-regulatory-support.html"
+    },
+    {
+      "source": "/de/leistungen/wissensluecken-uebergangssicherheit",
+      "destination": "/de/services/knowledge-gap-transition-security.html"
+    },
+    {
+      "source": "/de/referenzprojekte/beschichtung-aluminiumteile",
+      "destination": "/de/case-coated-aluminum-parts.html"
+    },
+    {
+      "source": "/de/leistungen/hochlauf-prozessstabilitaet",
+      "destination": "/de/services/ramp-up-process-stability.html"
+    },
+    {
+      "source": "/de/referenzprojekte/produktionshochlauf",
+      "destination": "/de/case-production-ramp-up.html"
+    },
+    {
+      "source": "/de/leistungen/schnelle-fehleranalyse",
+      "destination": "/de/services/rapid-response-troubleshooting.html"
+    },
+    {
+      "source": "/de/referenzprojekte",
+      "destination": "/de/case-studies.html"
+    },
+    {
+      "source": "/de/unser-ansatz",
+      "destination": "/de/our-approach.html"
+    },
+    {
+      "source": "/de/zertifikate",
+      "destination": "/de/certificates.html"
+    },
+    {
+      "source": "/de/datenschutz",
+      "destination": "/de/privacy.html"
+    },
+    {
+      "source": "/de/leistungen",
+      "destination": "/de/services.html"
+    },
+    {
+      "source": "/de/ueber-uns",
+      "destination": "/de/about.html"
+    },
+    {
+      "source": "/de/impressum",
+      "destination": "/de/imprint.html"
+    },
+    {
+      "source": "/de/berufsweg",
+      "destination": "/de/work-journey.html"
+    },
+    {
+      "source": "/de/regionen",
+      "destination": "/de/regions.html"
+    },
+    {
+      "source": "/de/kontakt",
+      "destination": "/de/contact.html"
+    },
+    {
+      "source": "/de/galerie",
+      "destination": "/de/gallery.html"
     }
   ]
 }

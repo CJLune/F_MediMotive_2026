@@ -453,7 +453,7 @@ html:not(.js) .our-approach-page .approach-hero__map-spoke {
   overflow: visible;
 }
 
-.our-approach-page .approach-hero__instrument.is-active .approach-hero__oct {
+.our-approach-page .approach-hero__instrument.is-active:not(.is-story-loop) .approach-hero__oct {
   animation: approach-oct-enter 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   animation-delay: calc(0.08s * var(--oct-i, 1));
 }
@@ -543,8 +543,10 @@ html:not(.js) .our-approach-page .approach-hero__map-spoke {
 }
 
 .our-approach-page .approach-hero__oct-label {
-  max-width: none;
+  max-width: calc(var(--oct-size) + 24px);
   width: max-content;
+  overflow-wrap: anywhere;
+  hyphens: auto;
   font-family: 'Montserrat', system-ui, sans-serif;
   font-size: 0.625rem;
   font-weight: 800;
@@ -659,6 +661,10 @@ html:not(.js) .our-approach-page .approach-hero__map-spoke {
 }
 
 /* Interface convergence story loop (~40s) */
+.our-approach-page .approach-hero__instrument.is-story-loop .approach-hero__oct {
+  animation: none;
+}
+
 .our-approach-page .approach-hero__instrument.is-story-loop.story-phase-1 .approach-hero__oct {
   opacity: 0.48;
   transition: opacity 0.45s ease;
@@ -1387,10 +1393,15 @@ html:not(.js) .our-approach-page .approach-hero__map-spoke {
     color: #486966;
   }
 
+  .our-approach-page .approach-hero__map-hub-caption {
+    display: none;
+  }
+
   .our-approach-page .approach-hero__constellation {
     width: min(100%, 420px);
     aspect-ratio: 1;
     margin-inline: auto;
+    overflow: visible;
   }
 
   /* Pull ring inward so top/bottom oct labels do not crowd the copy block above */
@@ -1437,7 +1448,7 @@ html:not(.js) .our-approach-page .approach-hero__map-spoke {
     transform: translate(-50%, -50%);
   }
 
-  .our-approach-page .approach-hero__instrument.is-active .approach-hero__oct {
+  .our-approach-page .approach-hero__instrument.is-active:not(.is-story-loop) .approach-hero__oct {
     animation: approach-oct-enter 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     animation-delay: calc(0.08s * var(--oct-i, 1));
   }
@@ -2388,10 +2399,16 @@ html:not(.js) .our-approach-page .approach-hero__map-spoke {
   .our-approach-page .diagnostic-step__label {
     font-size: var(--text-base-sm);
     line-height: var(--lh-base);
+    overflow-wrap: anywhere;
+    hyphens: auto;
   }
 
   .our-approach-page .diagnostic-step__label strong {
     display: inline;
+  }
+
+  .our-approach-page .diagnostic-step {
+    align-items: start;
   }
 
   .our-approach-page .diagnostic-result {

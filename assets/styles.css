@@ -5644,27 +5644,103 @@ html.js .home-cred-split__visual .home-cred-thumb__trigger img {
   flex-wrap: wrap;
   width: 100%;
   min-width: 0;
+  gap: 8px 6px;
+}
+
+.certificates-page .journey-chapter-nav .home-proof-chips a {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.certificates-page .cert-group {
+  min-width: 0;
+}
+
+.certificates-page .cert-group-title,
+.certificates-page .cert-group-lead {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.certificates-page .cert-group-title + .cert-group-lead {
+  margin: 4px 0 16px;
 }
 
 .certificates-page .cert-group-title[id] {
-  scroll-margin-top: 112px;
+  scroll-margin-top: 140px;
+}
+
+.certificates-page .cert-card figcaption {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.certificates-page .cert-card figcaption strong,
+.certificates-page .cert-card .cert-caption {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+@media (max-width: 920px) {
+  .certificates-page .journey-chapter-nav {
+    top: 58px;
+  }
+
+  .certificates-page .journey-chapter-nav .home-proof-chips {
+    justify-content: flex-start;
+  }
+
+  .certificates-page .cert-group-title[id] {
+    scroll-margin-top: 150px;
+  }
+
+  .certificates-page .cert-group-lead {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 640px) {
   .certificates-page .journey-chapter-nav {
     margin-bottom: 20px;
     padding: 12px 0;
+    top: 54px;
   }
 
   .certificates-page .journey-chapter-nav .home-proof-chips {
     justify-content: flex-start;
-    gap: 6px 4px;
+    gap: 8px 6px;
   }
 
   .certificates-page .journey-chapter-nav .home-proof-chips a {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    font-size: 0.68rem;
+  }
+
+  .certificates-page .cert-group-title[id] {
+    scroll-margin-top: 200px;
+  }
+
+  .certificates-page .cert-group-title {
+    font-size: 0.78rem;
+  }
+
+  .certificates-page .cert-group-lead {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .certificates-page .cert-group-grid,
+  .certificates-page .cert-group-grid--three {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -6415,6 +6491,7 @@ html.js .home-cred-split__visual .home-cred-thumb__trigger img {
 .about-page .about-hero__copy-panel {
   position: relative;
   overflow: hidden;
+  overflow-wrap: break-word;
   padding: clamp(24px, 3vw, 32px);
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.72);
@@ -6453,23 +6530,42 @@ html.js .home-cred-split__visual .home-cred-thumb__trigger img {
   z-index: 1;
 }
 
+.about-page .about-hero__copy-intro {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
 .about-page .about-hero__copy-intro h1 {
-  max-width: 16ch;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  hyphens: auto;
   font-size: clamp(2.35rem, 5vw, 3.1rem);
   line-height: 1.08;
   letter-spacing: -0.028em;
   color: var(--brand-dark);
 }
 
+/* DE about hero: long headline fits panel; descenders (g, n, y) stay inside */
+
+html[lang="de"] .about-page .about-hero__copy-intro h1 {
+  font-size: clamp(2rem, 4.2vw, 2.65rem);
+  line-height: 1.16;
+  letter-spacing: -0.022em;
+  padding-bottom: 0.06em;
+}
+
 .about-page .about-hero__copy-intro .lead {
-  max-width: 50ch;
+  max-width: 100%;
   margin-top: 22px;
   line-height: 1.62;
+  overflow-wrap: break-word;
 }
 
 .about-page .about-hero__support {
   margin: 18px 0 0;
-  max-width: 48ch;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  hyphens: auto;
   font-size: 1rem;
   line-height: 1.55;
   color: var(--text-secondary);
@@ -7142,6 +7238,11 @@ html.js .home-cred-split__visual .home-cred-thumb__trigger img {
     line-height: 1.14;
   }
 
+  html[lang="de"] .about-page .about-hero__copy-intro h1 {
+    font-size: clamp(1.55rem, 4.6vw, 1.95rem);
+    line-height: 1.18;
+  }
+
   .about-page .about-hero__copy-intro .lead {
     margin-top: 16px;
     font-size: 1rem;
@@ -7416,6 +7517,11 @@ html.js .home-cred-split__visual .home-cred-thumb__trigger img {
   .about-page .about-hero__copy-intro h1 {
     font-size: clamp(1.5rem, 6.8vw, 1.85rem);
     line-height: 1.16;
+  }
+
+  html[lang="de"] .about-page .about-hero__copy-intro h1 {
+    font-size: clamp(1.35rem, 5.8vw, 1.65rem);
+    line-height: 1.2;
   }
 
   .about-page .about-hero__copy-panel {
@@ -9838,6 +9944,11 @@ body {
 
   .about-page .about-hero__copy h1 {
     font-size: clamp(1.75rem, 6.8vw, 2rem);
+  }
+
+  html[lang="de"] .about-page .about-hero__copy h1 {
+    font-size: clamp(1.55rem, 6.2vw, 1.78rem);
+    line-height: 1.2;
   }
 }
 

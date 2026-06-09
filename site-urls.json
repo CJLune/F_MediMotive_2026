@@ -1,11 +1,19 @@
 {
   "site": "https://medimotive.de",
-  "generatedAt": "2026-06-09T22:32:18.473Z",
+  "generatedAt": "2026-06-09T23:33:06.205Z",
   "sitemapXml": "/sitemap.xml",
   "pages": [
     {
       "route": "index.html",
       "loc": "https://medimotive.de/",
+      "status": "live",
+      "priority": 1,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/index.html",
+      "loc": "https://medimotive.de/de/",
       "status": "live",
       "priority": 1,
       "changefreq": "monthly",
@@ -20,8 +28,24 @@
       "lastmod": "2026-06-09"
     },
     {
+      "route": "de/services.html",
+      "loc": "https://medimotive.de/de/leistungen",
+      "status": "live",
+      "priority": 0.9,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
       "route": "case-studies.html",
       "loc": "https://medimotive.de/case-studies",
+      "status": "live",
+      "priority": 0.9,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/case-studies.html",
+      "loc": "https://medimotive.de/de/referenzprojekte",
       "status": "live",
       "priority": 0.9,
       "changefreq": "monthly",
@@ -36,8 +60,24 @@
       "lastmod": "2026-06-09"
     },
     {
+      "route": "de/case-coated-aluminum-parts.html",
+      "loc": "https://medimotive.de/de/referenzprojekte/beschichtung-aluminiumteile",
+      "status": "live",
+      "priority": 0.85,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
       "route": "case-production-ramp-up.html",
       "loc": "https://medimotive.de/case-production-ramp-up",
+      "status": "live",
+      "priority": 0.85,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/case-production-ramp-up.html",
+      "loc": "https://medimotive.de/de/referenzprojekte/produktionshochlauf",
       "status": "live",
       "priority": 0.85,
       "changefreq": "monthly",
@@ -52,8 +92,24 @@
       "lastmod": "2026-06-09"
     },
     {
+      "route": "de/about.html",
+      "loc": "https://medimotive.de/de/ueber-uns",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
       "route": "contact.html",
       "loc": "https://medimotive.de/contact",
+      "status": "live",
+      "priority": 0.7,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/contact.html",
+      "loc": "https://medimotive.de/de/kontakt",
       "status": "live",
       "priority": 0.7,
       "changefreq": "yearly",
@@ -68,8 +124,24 @@
       "lastmod": "2026-06-09"
     },
     {
+      "route": "de/services/rapid-response-troubleshooting.html",
+      "loc": "https://medimotive.de/de/leistungen/schnelle-fehleranalyse",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
       "route": "supplier-quality-complaint-management.html",
       "loc": "https://medimotive.de/services/supplier-quality-complaint-management",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/services/supplier-quality-complaint-management.html",
+      "loc": "https://medimotive.de/de/leistungen/lieferantenqualitaet-reklamationsmanagement",
       "status": "live",
       "priority": 0.8,
       "changefreq": "monthly",
@@ -84,8 +156,24 @@
       "lastmod": "2026-06-09"
     },
     {
+      "route": "de/services/ramp-up-process-stability.html",
+      "loc": "https://medimotive.de/de/leistungen/hochlauf-prozessstabilitaet",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
       "route": "early-phase-risk-control-design-for-quality.html",
       "loc": "https://medimotive.de/services/early-phase-risk-control-design-for-quality",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/services/early-phase-risk-control-design-for-quality.html",
+      "loc": "https://medimotive.de/de/leistungen/fruehphasen-risikosteuerung-design-for-quality",
       "status": "live",
       "priority": 0.8,
       "changefreq": "monthly",
@@ -100,8 +188,24 @@
       "lastmod": "2026-06-09"
     },
     {
+      "route": "de/services/qms-audit-regulatory-support.html",
+      "loc": "https://medimotive.de/de/leistungen/qms-audit-regulatorische-unterstuetzung",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
       "route": "knowledge-gap-transition-security.html",
       "loc": "https://medimotive.de/services/knowledge-gap-transition-security",
+      "status": "live",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/services/knowledge-gap-transition-security.html",
+      "loc": "https://medimotive.de/de/leistungen/wissensluecken-uebergangssicherheit",
       "status": "live",
       "priority": 0.8,
       "changefreq": "monthly",
@@ -116,8 +220,24 @@
       "lastmod": "2026-06-09"
     },
     {
+      "route": "de/certificates.html",
+      "loc": "https://medimotive.de/de/zertifikate",
+      "status": "live",
+      "priority": 0.6,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
       "route": "work-journey.html",
       "loc": "https://medimotive.de/work-journey",
+      "status": "live",
+      "priority": 0.5,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/work-journey.html",
+      "loc": "https://medimotive.de/de/berufsweg",
       "status": "live",
       "priority": 0.5,
       "changefreq": "yearly",
@@ -132,8 +252,24 @@
       "lastmod": "2026-06-09"
     },
     {
+      "route": "de/our-approach.html",
+      "loc": "https://medimotive.de/de/unser-ansatz",
+      "status": "live",
+      "priority": 0.6,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
       "route": "regions.html",
       "loc": "https://medimotive.de/regions",
+      "status": "live",
+      "priority": 0.5,
+      "changefreq": "yearly",
+      "lastmod": "2026-06-09"
+    },
+    {
+      "route": "de/regions.html",
+      "loc": "https://medimotive.de/de/regionen",
       "status": "live",
       "priority": 0.5,
       "changefreq": "yearly",

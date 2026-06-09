@@ -4,6 +4,8 @@
   "scripts": {
     "dev": "node tools/dev.mjs",
     "build:css": "postcss assets/input.css -o assets/styles.css",
+    "sync:de-paths": "node tools/sync-de-public-paths.mjs",
+    "sync:de-urls": "node tools/migrate-de-german-urls.mjs && node tools/sync-locale-nav-links.mjs && node tools/sync-de-public-paths.mjs && node tools/sync-vercel-clean-urls.mjs && node tools/apply-seo.mjs && node tools/generate-sitemap.mjs",
     "convert:images": "node tools/convert-images.mjs",
     "sitemap": "node tools/generate-sitemap.mjs",
     "sync:vercel-urls": "node tools/sync-vercel-clean-urls.mjs",
@@ -15,7 +17,7 @@
     "build:favicons": "node tools/build-favicons.mjs",
     "build:og": "node tools/build-og.mjs",
     "certificates:html": "node tools/generate-certificates-html.mjs",
-    "build": "npm run build:css && npm run build:og && npm run sitemap",
+    "build": "npm run build:css && npm run sync:de-paths && npm run build:og && npm run sitemap",
     "verify:content": "python3 tools/verify-content.py"
   },
   "devDependencies": {
